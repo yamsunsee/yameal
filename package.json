@@ -1,0 +1,17 @@
+{
+  "name": "yameal",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "pug": "pug -w ./src/templates/index.pug -o ./ -P",
+    "tailwind": "tailwindcss -w -i ./src/styles/tailwind.css -o ./src/styles/main.min.css --minify"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.1.2"
+  }
+}
+

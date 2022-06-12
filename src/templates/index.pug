@@ -1,0 +1,152 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    script(type='module' src='https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js')
+    script(nomodule='' src='https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js')
+    link(rel="stylesheet", href="./src/styles/main.min.css")
+    title Yameal
+  body 
+    //- header
+    div
+      div Yameal 
+      div
+        each item in ["Home", "Menu", "Services", "About Us"]
+          a(href="")= item
+      div
+        a(href="") Sign up 
+        a(href="") Sign in 
+    //- hero
+    div 
+      div 
+        div Yummy food for busy people.
+        div Eat the food you dream about at affordable prices.
+        a(href="") Explore menu
+          ion-icon(name="chevron-forward")
+      div 
+        img(src="", alt="food")
+        div Eggs benedict burger 
+        div Price: 
+          span $25
+        div 
+          div Delivery info 
+          div We are commited to deliver your food within 30 minutes to your doorstep.
+        a(href="") Add to cart
+    //- recruitment
+    div 
+      img(src="", alt="deliveryman")
+      div 
+        div Become a deliveryman of our restaurant.
+        div
+          input(type="text" placeholder="Enter your email")
+          ion-icon(name="arrow-forward")
+      div
+        div 
+          each path in [...Array(3).keys()]
+            img(src=`${path}`, alt="avatar")
+          div 10+
+        p More than 50 riders working with us.
+    //- categories
+    div 
+      div 
+        img(src="", alt="cook")
+        div 
+          each path in [...Array(4).keys()]
+            img(src=`${path}`, alt="avatar")
+          ion-icon(name="add")
+        div 
+          ion-icon(name="star")
+          div 4,8 (1320 reviews)
+      div 
+        div Explore the best foods by categories.
+        div Eat the food you dream about at affordable prices. No need to come to us just call us. Explore the best foods by categories.
+        div 
+          each food, index in [{name: "Fast foods", amount: "50 times"}, {name: "Water & drinks", amount: "50 times"}, {name: "Desert foods", amount: "50 times"}]
+            img(src=`${index}`, alt="food")
+            div= food.name 
+            div= food.amount
+        div 
+          ion-icon(name="arrow-back")
+          ion-icon(name="arrow-forward")
+    //- discount
+    div
+      div Get up to 50% off when booking a table for dinner 
+      div Eat the food you dream about at affordable prices. No need to come to us just call us. Explore the best foods by categories.
+      a(href="") Book now
+    //- menu
+    div 
+      div Our delicious food menu 
+      div
+        div Eat the food you dream about at affordable prices. No need to come to us just call us. Explore the best foods by categories.
+        div 
+          ion-icon(name="arrow-back")
+          ion-icon(name="arrow-forward")
+      div 
+        div
+          each item in ["Breakfast", "Luch", "Dinner", "Drinks", "Snacks"]
+            div= item 
+        div 
+          each food, index in [{name: "Fried rices bowl", rating: 5}, {name: "Vegan rice bowl", rating: 5}]
+            img(src=`${index}`, alt="food")
+            div 
+              div 
+                div= food.name
+                each star in [...Array(food.rating).keys()]
+                  ion-icon(name="star")
+              a(href="") Order now
+    //- testimonial
+    div 
+      div 
+        q When I feel very hungry, O always order through them. They brings the food infront of my doorstep. Really an amazing platform for foods. They are providing the best and I enjoy order with them. They has been ensuring the quality foods for all the time.
+        div 
+          img(src="", alt="avatar")
+          div 
+            div Anthony Palnter 
+            div Director of MA 
+        div 
+          ion-icon(name="arrow-back")
+          ion-icon(name="arrow-forward")
+      div 
+        div What our clients say about us. 
+        div Read what our clients say about us. Know the best feedback from them.
+        a(href="") Read all 
+          ion-icon(name="chevron-forward")
+    //- newsletter 
+    div
+      div Our newsletter 
+      div 
+        div
+          div
+            input(type="text" placeholder="Enter your email address")
+            a(href="") Subscribe
+          div Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum magni sapiente tenetur numquam similique officiis quae excepturi eligendi sequi amet.
+        div 
+          div Follow us 
+          div 
+            each logo in ["facebook", "twitter", "instagram"]
+              ion-icon(name=`logo-${logo}`)
+    //- footer
+    div 
+      div Yameal 
+      div 
+        div 
+          div Watch how we prepare our food and deliver you.
+          video(src="")
+          div
+            each link in ["Terms", "Privacy", "Return", "Contact us"]
+              a(href="")= link 
+        div
+          each links, title in {"Explore": ["Pricing", "Updates", "Beta", "Newsletter", "Collaborations"], "Product": ["Business", "Designers", "Classrooms", "Newcomers"], "Learning": ["Courses", "Manuals", "Tutorials", "Communities"], "Resources": ["Tutorials", "Editorials", "Product", "Newsroom"]}
+            div= title 
+            div
+              each link in links 
+                div
+                  a(href="")= link
+    //- copyright
+    div 
+      div Design of  
+        a(href="https://webdesign.gdn/product/restaurant-website-potluck/" target="_blank") webdesign
+      div Made by 
+        a(href="") yamdev.online
