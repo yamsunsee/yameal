@@ -1,0 +1,21 @@
+.w-full.bg-amber-900.flex.flex-col.justify-center.items-center
+  .w-full.max-w-6xl.py-20.text-white
+    a.font-bold.text-3xl.text-orange-400(href="") Ya
+      span.text-blue-500 meal
+      span.text-orange-400 .
+    .mt-4.footer-layout 
+      div 
+        .font-semibold Watch how we prepare our food and deliver you.
+        video.my-4.rounded-lg(controls width="448" height="252")
+          source(src="./src/assets/videos/cooking.mp4" type="video/mp4") 
+        .flex.justify-between.text-orange-200
+          each link in ["Terms", "Privacy", "Return", "Contact us"]
+            a(href="")= link 
+      .grid.grid-cols-4
+        each links, title in {"Explore": ["Pricing", "Updates", "Beta", "Newsletter", "Collaborations"], "Product": ["Business", "Designers", "Classrooms", "Newcomers"], "Learning": ["Courses", "Manuals", "Tutorials", "Communities"], "Resources": ["Tutorials", "Editorials", "Product", "Newsroom"]}
+          .flex.flex-col.items-end
+            .font-semibold= title 
+            .mt-4.flex.flex-col.items-end.gap-4
+              each link in links 
+                .text-orange-200
+                  a(href="")= link

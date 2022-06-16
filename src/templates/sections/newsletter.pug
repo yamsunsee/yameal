@@ -1,0 +1,15 @@
+.w-full.bg-orange-400.flex.flex-col.justify-center.items-center
+  .w-full.max-w-6xl.py-20.text-white
+    .font-extrabold.text-5xl.capitalize Our newsletter 
+    .grid.grid-cols-2.mt-8 
+      div
+        .flex
+          input.w-80.p-4.border.border-white.rounded-tl-lg.rounded-bl-lg.outline-none.bg-transparent(type="text" placeholder="Enter your email address" class="focus:outline-none placeholder:text-white")
+          a.px-8.py-4.bg-amber-900.font-semibold.rounded-lg(href="" class="-ml-2") Subscribe
+        p.mt-8 Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel dolorum molestias dignissimos, quibusdam mollitia qui perferendis ullam reiciendis maiores ipsam.
+      .flex.flex-col.items-end
+        .font-semibold.text-xl Follow us 
+        .mt-4.flex.rounded-lg
+          each logo in ["facebook", "twitter", "instagram"]
+            a(href="") 
+              ion-icon.icon-ml.text-2xl.border.border-white.p-4(name=`logo-${logo}` class="hover:text-orange-400 hover:bg-white")

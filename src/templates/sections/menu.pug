@@ -1,0 +1,28 @@
+.w-full.mt-20 
+  .font-extrabold.text-5xl.max-w-md.capitalize Our delicious food menu. 
+  .flex.justify-between.items-center
+    .max-w-xl.mt-4
+      p Eat the food you dream about at affordable prices.
+      p No need to come to us just call us. Explore the best foods by categories.
+    .flex.gap-4
+      .w-12.h-12.rounded-lg.border-2.border-gray-300.flex.justify-center.items-center.text-gray-300.text-xl.cursor-pointer(class="hover:text-white hover:bg-orange-400 hover:border-orange-400") 
+        ion-icon(name="arrow-back")
+      .w-12.h-12.rounded-lg.border-2.border-gray-300.flex.justify-center.items-center.text-gray-300.text-xl.cursor-pointer(class="hover:text-white hover:bg-orange-400 hover:border-orange-400")  
+        ion-icon(name="arrow-forward")
+  .menu-layout.mt-8 
+    .font-semibold.text-xl.flex.flex-col.justify-center.gap-4
+      each item in ["Breakfast", "Luch", "Dinner", "Drinks", "Snacks & Desserts"]
+        if item === "Breakfast"
+          .px-8.py-4.border-r-4.border-r-orange-400.text-orange-400= item
+        else
+          .px-8.py-4.cursor-pointer.rounded-lg(class="hover:bg-orange-400 hover:text-white")= item 
+    .grid.grid-cols-2.gap-8 
+      each food, index in [{name: "Fried rices bowl", rating: 5}, {name: "Vegan rice bowl", rating: 5}]
+        .flex.flex-col.relative
+          img.rounded-lg(src=`./src/assets/images/food${index+5}.png`, alt="food")
+          .w-full.h-full.absolute.flex.justify-between.items-end.p-8.bg-gradient-to-b.from-transparent(class="to-black/80")
+            div 
+              .font-semibold.text-white= food.name
+              each star in [...Array(food.rating).keys()]
+                ion-icon.text-orange-400(name="star")
+            a.px-6.py-3.rounded-lg.text-center.bg-white.font-semibold.capitalize(href="", class="hover:bg-orange-400 hover:text-white") Order now

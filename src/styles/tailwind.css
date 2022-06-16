@@ -1,3 +1,31 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  html {
+    font-family: "Poppins", sans-serif;
+  }
+}
+
+@layer components {
+  .left-18 {
+    margin-left: 4.5rem;
+  }
+
+  .menu-layout {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 2rem;
+  }
+
+  .icon-ml {
+    margin-left: -1px;
+  }
+
+  .footer-layout {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-gap: 2rem;
+  }
+}

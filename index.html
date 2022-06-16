@@ -6,202 +6,308 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule="" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./src/styles/main.min.css">
     <title>Yameal</title>
   </head>
-  <body> 
-    <div>
-      <div>Yameal </div>
-      <div><a href="">Home</a><a href="">Menu</a><a href="">Services</a><a href="">About Us</a>
-      </div>
-      <div><a href="">Sign up </a><a href="">Sign in </a></div>
-    </div>
-    <div> 
-      <div> 
-        <div>Yummy food for busy people.</div>
-        <div>Eat the food you dream about at affordable prices.</div><a href="">Explore menu
-          <ion-icon name="chevron-forward"></ion-icon></a>
-      </div>
-      <div> <img src="" alt="food">
-        <div>Eggs benedict burger </div>
-        <div>Price: <span>$25</span></div>
-        <div> 
-          <div>Delivery info </div>
-          <div>We are commited to deliver your food within 30 minutes to your doorstep.</div>
-        </div><a href="">Add to cart</a>
-      </div>
-    </div>
-    <div> <img src="" alt="deliveryman">
-      <div> 
-        <div>Become a deliveryman of our restaurant.</div>
-        <div>
-          <input type="text" placeholder="Enter your email">
-          <ion-icon name="arrow-forward"></ion-icon>
+  <body class="w-full flex flex-col justify-center items-center select-none"> 
+    <div class="w-full flex flex-col justify-center items-center max-w-[90rem]">
+      <div class="w-full bg-orange-100 flex flex-col justify-center items-center sticky top-0 z-10 shadow-md">
+        <div class="w-full flex justify-between items-center max-w-6xl py-4"><a class="font-bold text-3xl text-orange-400" href="">Ya<span class="text-blue-900">meal</span><span class="text-orange-400">. </span></a>
+          <div class="flex gap-12 font-semibold capitalize"><a href="">Home</a><a href="">Menu</a><a href="">Services</a><a href="">About us</a>
+          </div>
+          <div class="flex gap-4"><a class="px-4 py-2 rounded-lg bg-orange-400 text-white uppercase font-semibold" href="">Sign up</a><a class="px-4 py-2 rounded-lg bg-blue-900 text-white uppercase font-semibold" href="">Sign in</a></div>
         </div>
       </div>
-      <div>
-        <div> <img src="0" alt="avatar"><img src="1" alt="avatar"><img src="2" alt="avatar">
-          <div>10+</div>
-        </div>
-        <p>More than 50 riders working with us.</p>
-      </div>
-    </div>
-    <div> 
-      <div> <img src="" alt="cook">
-        <div> <img src="0" alt="avatar"><img src="1" alt="avatar"><img src="2" alt="avatar"><img src="3" alt="avatar">
-          <ion-icon name="add"></ion-icon>
-        </div>
-        <div> 
-          <ion-icon name="star"></ion-icon>
-          <div>4,8 (1320 reviews)</div>
-        </div>
-      </div>
-      <div> 
-        <div>Explore the best foods by categories.</div>
-        <div>Eat the food you dream about at affordable prices. No need to come to us just call us. Explore the best foods by categories.</div>
-        <div> <img src="0" alt="food">
-          <div>Fast foods</div>
-          <div>50 times</div><img src="1" alt="food">
-          <div>Water &amp; drinks</div>
-          <div>50 times</div><img src="2" alt="food">
-          <div>Desert foods</div>
-          <div>50 times</div>
-        </div>
-        <div> 
-          <ion-icon name="arrow-back"></ion-icon>
-          <ion-icon name="arrow-forward"></ion-icon>
+      <div class="w-full bg-orange-100 flex flex-col justify-center items-center">
+        <div class="w-full max-w-6xl grid grid-cols-2 items-center mt-12">
+          <div>
+            <div class="font-extrabold text-6xl capitalize max-w-lg">Yummy food for busy people.</div>
+            <p class="mt-4">Eat the food you dream about at affordable prices.</p>
+            <p>No need to come to us just call us.</p><a class="mt-8 flex items-center" href="">
+              <div class="h-14 flex justify-center items-center bg-orange-400 text-white px-8 font-semibold rounded-tl-lg rounded-bl-lg capitalize">Explore menu</div>
+              <div class="h-14 px-4 bg-white flex justify-center items-center text-xl rounded-tr-lg rounded-br-lg">
+                <ion-icon name="chevron-forward"></ion-icon>
+              </div></a>
+          </div>
+          <div class="flex justify-end">
+            <div class="bg-white rounded-lg w-96"><img class="w-full object-cover" src="./src/assets/images/food0.png" alt="food">
+              <div class="p-8 flex flex-col justify-center items-center">
+                <div class="capitalize font-bold text-xl">Eggs benedict burger </div>
+                <div>Price: <span class="font-bold text-xl">$25</span></div>
+                <div class="mt-4"> 
+                  <div class="capitalize font-semibold text-lg">Delivery info </div>
+                  <p>We are commited to deliver your food within 30 minutes to your doorstep.</p>
+                </div><a class="mt-8 w-full p-4 rounded-lg bg-orange-400 text-white text-center font-semibold capitalize" href="">Add to cart</a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-    <div>
-      <div>Get up to 50% off when booking a table for dinner </div>
-      <div>Eat the food you dream about at affordable prices. No need to come to us just call us. Explore the best foods by categories.</div><a href="">Book now</a>
-    </div>
-    <div> 
-      <div>Our delicious food menu </div>
-      <div>
-        <div>Eat the food you dream about at affordable prices. No need to come to us just call us. Explore the best foods by categories.</div>
-        <div> 
-          <ion-icon name="arrow-back"></ion-icon>
-          <ion-icon name="arrow-forward"></ion-icon>
+      <div class="w-full bg-orange-100 flex flex-col justify-center items-center">
+        <div class="w-full flex justify-between items-center max-w-6xl">
+          <div class="flex w-full items-end h-80">
+            <div class="w-96 h-60 flex justify-center bg-orange-400 relative rounded-tl-lg rounded-tr-lg"> <img class="w-60 absolute bottom-0" src="./src/assets/images/deliveryman.png" alt="deliveryman"></div>
+            <div class="bg-blue-900 w-full h-fit rounded-tr-lg px-12 py-8 grid grid-cols-2 text-white">
+              <div> 
+                <div class="font-semibold text-2xl w-72">Become a deliveryman of our restaurant.</div>
+                <div class="relative flex items-center mt-4">
+                  <ion-icon class="absolute left-4 text-gray-300 text-xl" name="mail-outline"></ion-icon>
+                  <input class="py-4 pl-12 pr-4 outline-none rounded-tl-lg rounded-bl-lg bg-white/10 .focus:outline-none placeholder:text-gray-300" type="text" placeholder="Enter your email"><a class="h-14 flex justify-center items-center px-8 bg-orange-400 rounded-tr-lg rounded-br-lg text-xl" href=""> 
+                    <ion-icon name="arrow-forward"></ion-icon></a>
+                </div>
+              </div>
+              <div class="flex justify-end items-center">
+                <div class="w-40">
+                  <div class="flex items-center w-9 h-9 relative">
+                    <div class="absolute w-9 h-9 bg-white rounded-full flex justify-center items-center left-0">
+                      <div class="w-8"><img class="w-full object-cover rounded-full" src="./src/assets/images/avatar0.png" alt="avatar"></div>
+                    </div>
+                    <div class="absolute w-9 h-9 bg-white rounded-full flex justify-center items-center left-6">
+                      <div class="w-8"><img class="w-full object-cover rounded-full" src="./src/assets/images/avatar1.png" alt="avatar"></div>
+                    </div>
+                    <div class="absolute w-9 h-9 bg-white rounded-full flex justify-center items-center left-12">
+                      <div class="w-8"><img class="w-full object-cover rounded-full" src="./src/assets/images/avatar2.png" alt="avatar"></div>
+                    </div>
+                    <div class="absolute w-9 h-9 bg-white rounded-full text-blue-900 font-semibold flex justify-center items-center text-sm leading-6 left-[4.5rem]">10+</div>
+                  </div>
+                  <p class="mt-4">More than 50 riders working with us.</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <div> 
-        <div>
-          <div>Breakfast</div>
-          <div>Luch</div>
-          <div>Dinner</div>
-          <div>Drinks</div>
-          <div>Snacks</div>
+      <div class="w-full flex flex-col justify-center items-center max-w-6xl">
+        <div class="w-full grid grid-cols-2 mt-20"> 
+          <div class="flex items-center relative">
+            <div class="w-96 h-72 bg-orange-400 relative rounded-lg"> <img class="absolute bottom-0 left-8" src="./src/assets/images/cook.png" alt="cook"></div>
+            <div class="absolute p-8 bg-white rounded-lg left-64 top-8 shadow-md">
+              <div class="font-semibold text-xl">Happy customer</div>
+              <div class="flex items-center w-9 h-9 relative mt-2">
+                <div class="absolute w-9 h-9 bg-white rounded-full flex justify-center items-center left-0">
+                  <div class="w-8"><img class="rounded-full" src="./src/assets/images/avatar0.png" alt="avatar"></div>
+                </div>
+                <div class="absolute w-9 h-9 bg-white rounded-full flex justify-center items-center left-6">
+                  <div class="w-8"><img class="rounded-full" src="./src/assets/images/avatar1.png" alt="avatar"></div>
+                </div>
+                <div class="absolute w-9 h-9 bg-white rounded-full flex justify-center items-center left-12">
+                  <div class="w-8"><img class="rounded-full" src="./src/assets/images/avatar2.png" alt="avatar"></div>
+                </div>
+                <div class="absolute w-9 h-9 bg-white rounded-full flex justify-center items-center left-18">
+                  <div class="w-8"><img class="rounded-full" src="./src/assets/images/avatar3.png" alt="avatar"></div>
+                </div>
+                <div class="absolute w-8 h-8 bg-orange-100 flex justify-center items-center border-2 border-orange-400 border-dashed text-orange-400 rounded-full text-xl left-24">
+                  <ion-icon name="add"></ion-icon>
+                </div>
+              </div>
+              <div class="flex items-center mt-4"> 
+                <ion-icon class="text-orange-400 mr-2 leading-6" name="star"></ion-icon>
+                <div>4,8 (1320 reviews)</div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col"> 
+            <div class="font-extrabold text-5xl capitalize">Explore the best<br>foods by categories.</div>
+            <p class="mt-4">Eat the food you dream about at affordable prices.</p>
+            <p>No need to come to us just call us. Explore the best foods by categories.</p>
+            <div class="grid grid-cols-3 gap-8 mt-8">
+              <div class="flex flex-col"> <img class="rounded-lg" src="./src/assets/images/food1.png" alt="food">
+                <div class="font-semibold text-xl mt-4">Fast foods</div>
+                <div>50 times</div>
+              </div>
+              <div class="flex flex-col"> <img class="rounded-lg" src="./src/assets/images/food2.png" alt="food">
+                <div class="font-semibold text-xl mt-4">Water &amp; drinks</div>
+                <div>50 times</div>
+              </div>
+              <div class="flex flex-col"> <img class="rounded-lg" src="./src/assets/images/food3.png" alt="food">
+                <div class="font-semibold text-xl mt-4">Desert foods</div>
+                <div>50 times</div>
+              </div>
+            </div>
+            <div class="flex gap-4 self-end mt-8">
+              <div class="w-12 h-12 rounded-lg border-2 border-gray-300 flex justify-center items-center text-gray-300 text-xl cursor-pointer hover:text-white hover:bg-orange-400 hover:border-orange-400"> 
+                <ion-icon name="arrow-back"></ion-icon>
+              </div>
+              <div class="w-12 h-12 rounded-lg border-2 border-gray-300 flex justify-center items-center text-gray-300 text-xl cursor-pointer hover:text-white hover:bg-orange-400 hover:border-orange-400"> 
+                <ion-icon name="arrow-forward"></ion-icon>
+              </div>
+            </div>
+          </div>
         </div>
-        <div> <img src="0" alt="food">
+        <div class="w-full h-96 mt-20 relative rounded-lg overflow-hidden"><img class="w-full h-full object-cover" src="./src/assets/images/food4.png" alt="food">
+          <div class="absolute w-full h-full top-0 left-0 text-white flex flex-col justify-center items-center text-center bg-gradient-to-t from-transparent to-black/80">
+            <div class="font-semibold text-4xl">Get up to 50% off when<br>booking a table for dinner </div>
+            <div class="mt-4">Eat the food you dream about at affordable prices.</div>
+            <p>No need to come to us just call us. Explore the best foods by categories.</p><a class="mt-8 px-8 py-4 rounded-lg bg-orange-400 text-white text-center font-semibold capitalize" href="">Book now</a>
+          </div>
+        </div>
+        <div class="w-full mt-20"> 
+          <div class="font-extrabold text-5xl max-w-md capitalize">Our delicious food menu. </div>
+          <div class="flex justify-between items-center">
+            <div class="max-w-xl mt-4">
+              <p>Eat the food you dream about at affordable prices.</p>
+              <p>No need to come to us just call us. Explore the best foods by categories.</p>
+            </div>
+            <div class="flex gap-4">
+              <div class="w-12 h-12 rounded-lg border-2 border-gray-300 flex justify-center items-center text-gray-300 text-xl cursor-pointer hover:text-white hover:bg-orange-400 hover:border-orange-400"> 
+                <ion-icon name="arrow-back"></ion-icon>
+              </div>
+              <div class="w-12 h-12 rounded-lg border-2 border-gray-300 flex justify-center items-center text-gray-300 text-xl cursor-pointer hover:text-white hover:bg-orange-400 hover:border-orange-400"> 
+                <ion-icon name="arrow-forward"></ion-icon>
+              </div>
+            </div>
+          </div>
+          <div class="menu-layout mt-8"> 
+            <div class="font-semibold text-xl flex flex-col justify-center gap-4">
+              <div class="px-8 py-4 border-r-4 border-r-orange-400 text-orange-400">Breakfast</div>
+              <div class="px-8 py-4 cursor-pointer rounded-lg hover:bg-orange-400 hover:text-white">Luch</div>
+              <div class="px-8 py-4 cursor-pointer rounded-lg hover:bg-orange-400 hover:text-white">Dinner</div>
+              <div class="px-8 py-4 cursor-pointer rounded-lg hover:bg-orange-400 hover:text-white">Drinks</div>
+              <div class="px-8 py-4 cursor-pointer rounded-lg hover:bg-orange-400 hover:text-white">Snacks &amp; Desserts</div>
+            </div>
+            <div class="grid grid-cols-2 gap-8"> 
+              <div class="flex flex-col relative"><img class="rounded-lg" src="./src/assets/images/food5.png" alt="food">
+                <div class="w-full h-full absolute flex justify-between items-end p-8 bg-gradient-to-b from-transparent to-black/80">
+                  <div> 
+                    <div class="font-semibold text-white">Fried rices bowl</div>
+                    <ion-icon class="text-orange-400" name="star"></ion-icon>
+                    <ion-icon class="text-orange-400" name="star"></ion-icon>
+                    <ion-icon class="text-orange-400" name="star"></ion-icon>
+                    <ion-icon class="text-orange-400" name="star"></ion-icon>
+                    <ion-icon class="text-orange-400" name="star"></ion-icon>
+                  </div><a class="px-6 py-3 rounded-lg text-center bg-white font-semibold capitalize hover:bg-orange-400 hover:text-white" href="">Order now</a>
+                </div>
+              </div>
+              <div class="flex flex-col relative"><img class="rounded-lg" src="./src/assets/images/food6.png" alt="food">
+                <div class="w-full h-full absolute flex justify-between items-end p-8 bg-gradient-to-b from-transparent to-black/80">
+                  <div> 
+                    <div class="font-semibold text-white">Vegan rice bowl</div>
+                    <ion-icon class="text-orange-400" name="star"></ion-icon>
+                    <ion-icon class="text-orange-400" name="star"></ion-icon>
+                    <ion-icon class="text-orange-400" name="star"></ion-icon>
+                    <ion-icon class="text-orange-400" name="star"></ion-icon>
+                    <ion-icon class="text-orange-400" name="star"></ion-icon>
+                  </div><a class="px-6 py-3 rounded-lg text-center bg-white font-semibold capitalize hover:bg-orange-400 hover:text-white" href="">Order now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mt-20 w-full bg-gray-100 flex flex-col justify-center items-center">
+        <div class="w-full max-w-6xl grid grid-cols-2 items-center py-20 gap-20">
           <div> 
+            <q><i>When I feel very hungry, I always order through them. They brings the food infront of my doorstep. Really an amazing platform for foods. They are providing the best and I enjoy order with them. They has been ensuring the quality foods for all the time.</i></q>
+            <div class="flex mt-8 items-center gap-4"> <img class="w-20 h-20 rounded-full" src="./src/assets/images/avatar4.png" alt="avatar">
+              <div> 
+                <div class="font-semibold text-xl">Anthony Palnter </div>
+                <div>Director of MA </div>
+              </div>
+            </div>
+            <div class="flex gap-4 mt-8">
+              <div class="w-12 h-12 rounded-lg border-2 border-gray-300 flex justify-center items-center text-gray-300 text-xl cursor-pointer hover:text-white hover:bg-orange-400 hover:border-orange-400"> 
+                <ion-icon name="arrow-back"></ion-icon>
+              </div>
+              <div class="w-12 h-12 rounded-lg border-2 border-gray-300 flex justify-center items-center text-gray-300 text-xl cursor-pointer hover:text-white hover:bg-orange-400 hover:border-orange-400"> 
+                <ion-icon name="arrow-forward"></ion-icon>
+              </div>
+            </div>
+          </div>
+          <div class="flex justify-end">
+            <div class="max-w-md"> 
+              <div class="font-extrabold text-5xl capitalize">What our clients say about us. </div>
+              <p class="mt-4">Read what our clients say about us. Know the best feedback from them.</p><a class="mt-8 flex items-center" href="">
+                <div class="h-14 flex justify-center items-center bg-orange-400 text-white px-8 font-semibold rounded-tl-lg rounded-bl-lg capitalize">Read all</div>
+                <div class="h-14 px-4 bg-white flex justify-center items-center text-xl rounded-tr-lg rounded-br-lg">
+                  <ion-icon name="chevron-forward"></ion-icon>
+                </div></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="w-full bg-orange-400 flex flex-col justify-center items-center">
+        <div class="w-full max-w-6xl py-20 text-white">
+          <div class="font-extrabold text-5xl capitalize">Our newsletter </div>
+          <div class="grid grid-cols-2 mt-8"> 
+            <div>
+              <div class="flex">
+                <input class="w-80 p-4 border border-white rounded-tl-lg rounded-bl-lg outline-none bg-transparent focus:outline-none placeholder:text-white" type="text" placeholder="Enter your email address"><a class="px-8 py-4 bg-amber-900 font-semibold rounded-lg -ml-2" href="">Subscribe</a>
+              </div>
+              <p class="mt-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel dolorum molestias dignissimos, quibusdam mollitia qui perferendis ullam reiciendis maiores ipsam.</p>
+            </div>
+            <div class="flex flex-col items-end">
+              <div class="font-semibold text-xl">Follow us </div>
+              <div class="mt-4 flex rounded-lg"><a href=""> 
+                  <ion-icon class="icon-ml text-2xl border border-white p-4 hover:text-orange-400 hover:bg-white" name="logo-facebook"></ion-icon></a><a href=""> 
+                  <ion-icon class="icon-ml text-2xl border border-white p-4 hover:text-orange-400 hover:bg-white" name="logo-twitter"></ion-icon></a><a href=""> 
+                  <ion-icon class="icon-ml text-2xl border border-white p-4 hover:text-orange-400 hover:bg-white" name="logo-instagram"></ion-icon></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="w-full bg-amber-900 flex flex-col justify-center items-center">
+        <div class="w-full max-w-6xl py-20 text-white"><a class="font-bold text-3xl text-orange-400" href="">Ya<span class="text-blue-500">meal</span><span class="text-orange-400">.</span></a>
+          <div class="mt-4 footer-layout"> 
             <div> 
-              <div>Fried rices bowl</div>
-              <ion-icon name="star"></ion-icon>
-              <ion-icon name="star"></ion-icon>
-              <ion-icon name="star"></ion-icon>
-              <ion-icon name="star"></ion-icon>
-              <ion-icon name="star"></ion-icon>
-            </div><a href="">Order now</a>
-          </div><img src="1" alt="food">
-          <div> 
-            <div> 
-              <div>Vegan rice bowl</div>
-              <ion-icon name="star"></ion-icon>
-              <ion-icon name="star"></ion-icon>
-              <ion-icon name="star"></ion-icon>
-              <ion-icon name="star"></ion-icon>
-              <ion-icon name="star"></ion-icon>
-            </div><a href="">Order now</a>
+              <div class="font-semibold">Watch how we prepare our food and deliver you.</div>
+              <video class="my-4 rounded-lg" controls width="448" height="252">
+                <source src="./src/assets/videos/cooking.mp4" type="video/mp4">
+              </video>
+              <div class="flex justify-between text-orange-200"><a href="">Terms</a><a href="">Privacy</a><a href="">Return</a><a href="">Contact us</a>
+              </div>
+            </div>
+            <div class="grid grid-cols-4">
+              <div class="flex flex-col items-end">
+                <div class="font-semibold">Explore</div>
+                <div class="mt-4 flex flex-col items-end gap-4">
+                  <div class="text-orange-200"><a href="">Pricing</a></div>
+                  <div class="text-orange-200"><a href="">Updates</a></div>
+                  <div class="text-orange-200"><a href="">Beta</a></div>
+                  <div class="text-orange-200"><a href="">Newsletter</a></div>
+                  <div class="text-orange-200"><a href="">Collaborations</a></div>
+                </div>
+              </div>
+              <div class="flex flex-col items-end">
+                <div class="font-semibold">Product</div>
+                <div class="mt-4 flex flex-col items-end gap-4">
+                  <div class="text-orange-200"><a href="">Business</a></div>
+                  <div class="text-orange-200"><a href="">Designers</a></div>
+                  <div class="text-orange-200"><a href="">Classrooms</a></div>
+                  <div class="text-orange-200"><a href="">Newcomers</a></div>
+                </div>
+              </div>
+              <div class="flex flex-col items-end">
+                <div class="font-semibold">Learning</div>
+                <div class="mt-4 flex flex-col items-end gap-4">
+                  <div class="text-orange-200"><a href="">Courses</a></div>
+                  <div class="text-orange-200"><a href="">Manuals</a></div>
+                  <div class="text-orange-200"><a href="">Tutorials</a></div>
+                  <div class="text-orange-200"><a href="">Communities</a></div>
+                </div>
+              </div>
+              <div class="flex flex-col items-end">
+                <div class="font-semibold">Resources</div>
+                <div class="mt-4 flex flex-col items-end gap-4">
+                  <div class="text-orange-200"><a href="">Tutorials</a></div>
+                  <div class="text-orange-200"><a href="">Editorials</a></div>
+                  <div class="text-orange-200"><a href="">Product</a></div>
+                  <div class="text-orange-200"><a href="">Newsroom</a></div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <div> 
-      <div> 
-        <q>When I feel very hungry, O always order through them. They brings the food infront of my doorstep. Really an amazing platform for foods. They are providing the best and I enjoy order with them. They has been ensuring the quality foods for all the time.</q>
-        <div> <img src="" alt="avatar">
-          <div> 
-            <div>Anthony Palnter </div>
-            <div>Director of MA </div>
-          </div>
-        </div>
-        <div> 
-          <ion-icon name="arrow-back"></ion-icon>
-          <ion-icon name="arrow-forward"></ion-icon>
+      <div class="w-full bg-gray-900 flex flex-col justify-center items-center text-center">
+        <div class="w-full max-w-6xl py-4 text-white"> 
+          <div>Based on design by  <a class="text-orange-400" href="https://webdesign.gdn/product/restaurant-website-potluck/" target="_blank">@webdesign</a></div>
+          <div>Made by <a class="text-orange-400" href="https://yamdev.online/" target="_blank">@yamdev.online</a> in June 2022</div>
         </div>
       </div>
-      <div> 
-        <div>What our clients say about us. </div>
-        <div>Read what our clients say about us. Know the best feedback from them.</div><a href="">Read all 
-          <ion-icon name="chevron-forward"></ion-icon></a>
-      </div>
-    </div>
-    <div>
-      <div>Our newsletter </div>
-      <div> 
-        <div>
-          <div>
-            <input type="text" placeholder="Enter your email address"><a href="">Subscribe</a>
-          </div>
-          <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum magni sapiente tenetur numquam similique officiis quae excepturi eligendi sequi amet.</div>
-        </div>
-        <div> 
-          <div>Follow us </div>
-          <div> 
-            <ion-icon name="logo-facebook"></ion-icon>
-            <ion-icon name="logo-twitter"></ion-icon>
-            <ion-icon name="logo-instagram"></ion-icon>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div> 
-      <div>Yameal </div>
-      <div> 
-        <div> 
-          <div>Watch how we prepare our food and deliver you.</div>
-          <video src=""></video>
-          <div><a href="">Terms</a><a href="">Privacy</a><a href="">Return</a><a href="">Contact us</a>
-          </div>
-        </div>
-        <div>
-          <div>Explore</div>
-          <div>
-            <div><a href="">Pricing</a></div>
-            <div><a href="">Updates</a></div>
-            <div><a href="">Beta</a></div>
-            <div><a href="">Newsletter</a></div>
-            <div><a href="">Collaborations</a></div>
-          </div>
-          <div>Product</div>
-          <div>
-            <div><a href="">Business</a></div>
-            <div><a href="">Designers</a></div>
-            <div><a href="">Classrooms</a></div>
-            <div><a href="">Newcomers</a></div>
-          </div>
-          <div>Learning</div>
-          <div>
-            <div><a href="">Courses</a></div>
-            <div><a href="">Manuals</a></div>
-            <div><a href="">Tutorials</a></div>
-            <div><a href="">Communities</a></div>
-          </div>
-          <div>Resources</div>
-          <div>
-            <div><a href="">Tutorials</a></div>
-            <div><a href="">Editorials</a></div>
-            <div><a href="">Product</a></div>
-            <div><a href="">Newsroom</a></div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div> 
-      <div>Design of  <a href="https://webdesign.gdn/product/restaurant-website-potluck/" target="_blank">webdesign</a></div>
-      <div>Made by <a href="">yamdev.online</a></div>
     </div>
   </body>
 </html>

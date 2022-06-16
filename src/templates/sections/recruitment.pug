@@ -1,0 +1,22 @@
+.w-full.bg-orange-100.flex.flex-col.justify-center.items-center
+  .w-full.flex.justify-between.items-center.max-w-6xl
+    .flex.w-full.items-end.h-80
+      .w-96.h-60.flex.justify-center.bg-orange-400.relative.rounded-tl-lg.rounded-tr-lg 
+        img.w-60.absolute.bottom-0(src="./src/assets/images/deliveryman.png", alt="deliveryman")
+      .bg-blue-900.w-full.h-fit.rounded-tr-lg.px-12.py-8.grid.grid-cols-2.text-white
+        div 
+          .font-semibold.text-2xl.w-72 Become a deliveryman of our restaurant.
+          .relative.flex.items-center.mt-4
+            ion-icon.absolute.left-4.text-gray-300.text-xl(name="mail-outline")
+            input.py-4.pl-12.pr-4.outline-none.rounded-tl-lg.rounded-bl-lg(type="text" placeholder="Enter your email" class="bg-white/10 .focus:outline-none placeholder:text-gray-300")
+            a.h-14.flex.justify-center.items-center.px-8.bg-orange-400.rounded-tr-lg.rounded-br-lg.text-xl(href="") 
+              ion-icon(name="arrow-forward")
+        .flex.justify-end.items-center
+          .w-40
+            .flex.items-center.w-9.h-9.relative
+              each path in [...Array(3).keys()]
+                .absolute.w-9.h-9.bg-white.rounded-full.flex.justify-center.items-center(class=`left-${path*6}`)
+                  .w-8
+                    img.w-full.object-cover.rounded-full(src=`./src/assets/images/avatar${path}.png`, alt="avatar")
+              .absolute.w-9.h-9.bg-white.rounded-full.text-blue-900.font-semibold.flex.justify-center.items-center.text-sm.leading-6(class="left-[4.5rem]") 10+
+            p.mt-4 More than 50 riders working with us.

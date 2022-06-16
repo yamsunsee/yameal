@@ -1,0 +1,11 @@
+.w-full.bg-orange-100.flex.flex-col.justify-center.items-center.sticky.top-0.z-10.shadow-md
+  .w-full.flex.justify-between.items-center.max-w-6xl.py-4
+    a.font-bold.text-3xl.text-orange-400(href="") Ya
+      span.text-blue-900 meal
+      span.text-orange-400 . 
+    .flex.gap-12.font-semibold.capitalize
+      each item in ["Home", "Menu", "Services", "About us"]
+        a(href="")= item
+    .flex.gap-4
+      a.px-4.py-2.rounded-lg.bg-orange-400.text-white.uppercase.font-semibold(href="") Sign up
+      a.px-4.py-2.rounded-lg.bg-blue-900.text-white.uppercase.font-semibold(href="") Sign in

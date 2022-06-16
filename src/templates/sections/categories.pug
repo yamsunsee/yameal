@@ -1,0 +1,33 @@
+.w-full.grid.grid-cols-2.mt-20 
+  .flex.items-center.relative
+    .w-96.h-72.bg-orange-400.relative.rounded-lg 
+      img.absolute.bottom-0.left-8(src="./src/assets/images/cook.png", alt="cook")
+    .absolute.p-8.bg-white.rounded-lg.left-64.top-8.shadow-md
+      .font-semibold.text-xl Happy customer
+      .flex.items-center.w-9.h-9.relative.mt-2
+        each path in [...Array(4).keys()]
+          .absolute.w-9.h-9.bg-white.rounded-full.flex.justify-center.items-center(class=`left-${path*6}`)
+            .w-8
+              img.rounded-full(src=`./src/assets/images/avatar${path}.png`, alt="avatar")
+        .absolute.w-8.h-8.bg-orange-100.flex.justify-center.items-center.border-2.border-orange-400.border-dashed.text-orange-400.rounded-full.text-xl.left-24
+          ion-icon(name="add")
+      .flex.items-center.mt-4 
+        ion-icon.text-orange-400.mr-2.leading-6(name="star")
+        div 4,8 (1320 reviews)
+  .flex.flex-col 
+    .font-extrabold.text-5xl.capitalize Explore the best
+      br
+      | foods by categories.
+    p.mt-4 Eat the food you dream about at affordable prices.
+    p No need to come to us just call us. Explore the best foods by categories.
+    .grid.grid-cols-3.gap-8.mt-8
+      each food, index in [{name: "Fast foods", amount: "50 times"}, {name: "Water & drinks", amount: "50 times"}, {name: "Desert foods", amount: "50 times"}]
+        .flex.flex-col 
+          img.rounded-lg(src=`./src/assets/images/food${index+1}.png`, alt="food")
+          .font-semibold.text-xl.mt-4= food.name 
+          div= food.amount
+    .flex.gap-4.self-end.mt-8
+      .w-12.h-12.rounded-lg.border-2.border-gray-300.flex.justify-center.items-center.text-gray-300.text-xl.cursor-pointer(class="hover:text-white hover:bg-orange-400 hover:border-orange-400") 
+        ion-icon(name="arrow-back")
+      .w-12.h-12.rounded-lg.border-2.border-gray-300.flex.justify-center.items-center.text-gray-300.text-xl.cursor-pointer(class="hover:text-white hover:bg-orange-400 hover:border-orange-400")  
+        ion-icon(name="arrow-forward")
