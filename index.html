@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="scroll-smooth" lang="en">
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,9 +16,9 @@
     <div class="w-full flex flex-col justify-center items-center max-w-[90rem]">
       <div class="w-full bg-orange-100 flex flex-col justify-center items-center sticky top-0 z-10 shadow-md">
         <div class="w-full flex justify-between items-center max-w-6xl py-4"><a class="font-bold text-3xl text-orange-400" href="">Ya<span class="text-blue-900">meal</span><span class="text-orange-400">. </span></a>
-          <div class="flex gap-12 font-semibold capitalize"><a href="">Home</a><a href="">Menu</a><a href="">Services</a><a href="">About us</a>
+          <div class="flex gap-12 font-semibold capitalize"><a class="link" href="#">Home</a><a class="link" href="#categories">Categories</a><a class="link" href="#menu">Menu</a><a class="link" href="#about">About us</a>
           </div>
-          <div class="flex gap-4"><a class="px-4 py-2 rounded-lg bg-orange-400 text-white uppercase font-semibold" href="">Sign up</a><a class="px-4 py-2 rounded-lg bg-blue-900 text-white uppercase font-semibold" href="">Sign in</a></div>
+          <div class="flex gap-4"><a class="px-4 py-2 rounded-lg bg-orange-400 text-white uppercase font-semibold transition-all hover:bg-white hover:text-orange-400 hover:shadow-md" href="">Sign up</a><a class="px-4 py-2 rounded-lg bg-blue-900 text-white uppercase font-semibold transition-all hover:bg-white hover:text-blue-900 hover:shadow-md" href="">Sign in</a></div>
         </div>
       </div>
       <div class="w-full bg-orange-100 flex flex-col justify-center items-center">
@@ -26,9 +26,9 @@
           <div>
             <div class="font-extrabold text-6xl capitalize max-w-lg">Yummy food for busy people.</div>
             <p class="mt-4">Eat the food you dream about at affordable prices.</p>
-            <p>No need to come to us just call us.</p><a class="mt-8 flex items-center" href="">
-              <div class="h-14 flex justify-center items-center bg-orange-400 text-white px-8 font-semibold rounded-tl-lg rounded-bl-lg capitalize">Explore menu</div>
-              <div class="h-14 px-4 bg-white flex justify-center items-center text-xl rounded-tr-lg rounded-br-lg">
+            <p>No need to come to us just call us.</p><a class="mt-8 flex items-center group w-fit" href="">
+              <div class="h-14 flex justify-center items-center bg-orange-400 text-white px-8 font-semibold rounded-tl-lg rounded-bl-lg capitalize transition-all group-hover:bg-white group-hover:text-orange-400 group-hover:shadow-md">Explore menu</div>
+              <div class="h-14 px-4 bg-white flex justify-center items-center text-xl rounded-tr-lg rounded-br-lg transition-all group-hover:bg-orange-400 group-hover:text-white group-hover:shadow-md">
                 <ion-icon name="chevron-forward"></ion-icon>
               </div></a>
           </div>
@@ -40,7 +40,7 @@
                 <div class="mt-4"> 
                   <div class="capitalize font-semibold text-lg">Delivery info </div>
                   <p>We are commited to deliver your food within 30 minutes to your doorstep.</p>
-                </div><a class="mt-8 w-full p-4 rounded-lg bg-orange-400 text-white text-center font-semibold capitalize" href="">Add to cart</a>
+                </div><a class="mt-8 w-full p-4 rounded-lg bg-orange-400 text-white text-center font-semibold capitalize transition-all hover:bg-white hover:text-orange-400 hover:shadow-md" href="">Add to cart</a>
               </div>
             </div>
           </div>
@@ -55,7 +55,7 @@
                 <div class="font-semibold text-2xl w-72">Become a deliveryman of our restaurant.</div>
                 <div class="relative flex items-center mt-4">
                   <ion-icon class="absolute left-4 text-gray-300 text-xl" name="mail-outline"></ion-icon>
-                  <input class="py-4 pl-12 pr-4 outline-none rounded-tl-lg rounded-bl-lg bg-white/10 .focus:outline-none placeholder:text-gray-300" type="text" placeholder="Enter your email"><a class="h-14 flex justify-center items-center px-8 bg-orange-400 rounded-tr-lg rounded-br-lg text-xl" href=""> 
+                  <input class="py-4 pl-12 pr-4 outline-none rounded-tl-lg rounded-bl-lg bg-white/10 .focus:outline-none placeholder:text-gray-300" type="text" placeholder="Enter your email"><a class="h-14 flex justify-center items-center px-8 bg-orange-400 rounded-tr-lg rounded-br-lg text-xl transition-all hover:bg-white hover:text-orange-400 hover:shadow-md" href=""> 
                     <ion-icon name="arrow-forward"></ion-icon></a>
                 </div>
               </div>
@@ -81,7 +81,7 @@
         </div>
       </div>
       <div class="w-full flex flex-col justify-center items-center max-w-6xl">
-        <div class="w-full grid grid-cols-2 mt-20"> 
+        <div class="scroll-mt-36 w-full grid grid-cols-2 mt-20" id="categories"> 
           <div class="flex items-center relative">
             <div class="w-96 h-72 bg-orange-400 relative rounded-lg"> <img class="absolute bottom-0 left-8" src="./src/assets/images/cook.png" alt="cook"></div>
             <div class="absolute p-8 bg-white rounded-lg left-64 top-8 shadow-md">
@@ -128,10 +128,10 @@
               </div>
             </div>
             <div class="flex gap-4 self-end mt-8">
-              <div class="w-12 h-12 rounded-lg border-2 border-gray-300 flex justify-center items-center text-gray-300 text-xl cursor-pointer hover:text-white hover:bg-orange-400 hover:border-orange-400"> 
+              <div class="w-12 h-12 rounded-lg border-2 border-gray-300 flex justify-center items-center text-gray-300 text-xl cursor-pointer transition-all hover:text-white hover:bg-orange-400 hover:border-orange-400"> 
                 <ion-icon name="arrow-back"></ion-icon>
               </div>
-              <div class="w-12 h-12 rounded-lg border-2 border-gray-300 flex justify-center items-center text-gray-300 text-xl cursor-pointer hover:text-white hover:bg-orange-400 hover:border-orange-400"> 
+              <div class="w-12 h-12 rounded-lg border-2 border-gray-300 flex justify-center items-center text-gray-300 text-xl cursor-pointer transition-all hover:text-white hover:bg-orange-400 hover:border-orange-400"> 
                 <ion-icon name="arrow-forward"></ion-icon>
               </div>
             </div>
@@ -141,10 +141,10 @@
           <div class="absolute w-full h-full top-0 left-0 text-white flex flex-col justify-center items-center text-center bg-gradient-to-t from-transparent to-black/80">
             <div class="font-semibold text-4xl">Get up to 50% off when<br>booking a table for dinner </div>
             <div class="mt-4">Eat the food you dream about at affordable prices.</div>
-            <p>No need to come to us just call us. Explore the best foods by categories.</p><a class="mt-8 px-8 py-4 rounded-lg bg-orange-400 text-white text-center font-semibold capitalize" href="">Book now</a>
+            <p>No need to come to us just call us. Explore the best foods by categories.</p><a class="mt-8 px-8 py-4 rounded-lg bg-orange-400 text-white text-center font-semibold capitalize transition-all hover:bg-white hover:text-orange-400 hover:shadow-md" href="">Book now</a>
           </div>
         </div>
-        <div class="w-full mt-20"> 
+        <div class="scroll-mt-36 w-full mt-20" id="menu"> 
           <div class="font-extrabold text-5xl max-w-md capitalize">Our delicious food menu. </div>
           <div class="flex justify-between items-center">
             <div class="max-w-xl mt-4">
@@ -152,10 +152,10 @@
               <p>No need to come to us just call us. Explore the best foods by categories.</p>
             </div>
             <div class="flex gap-4">
-              <div class="w-12 h-12 rounded-lg border-2 border-gray-300 flex justify-center items-center text-gray-300 text-xl cursor-pointer hover:text-white hover:bg-orange-400 hover:border-orange-400"> 
+              <div class="w-12 h-12 rounded-lg border-2 border-gray-300 flex justify-center items-center text-gray-300 text-xl cursor-pointer transition-all hover:text-white hover:bg-orange-400 hover:border-orange-400"> 
                 <ion-icon name="arrow-back"></ion-icon>
               </div>
-              <div class="w-12 h-12 rounded-lg border-2 border-gray-300 flex justify-center items-center text-gray-300 text-xl cursor-pointer hover:text-white hover:bg-orange-400 hover:border-orange-400"> 
+              <div class="w-12 h-12 rounded-lg border-2 border-gray-300 flex justify-center items-center text-gray-300 text-xl cursor-pointer transition-all hover:text-white hover:bg-orange-400 hover:border-orange-400"> 
                 <ion-icon name="arrow-forward"></ion-icon>
               </div>
             </div>
@@ -163,10 +163,10 @@
           <div class="menu-layout mt-8"> 
             <div class="font-semibold text-xl flex flex-col justify-center gap-4">
               <div class="px-8 py-4 border-r-4 border-r-orange-400 text-orange-400">Breakfast</div>
-              <div class="px-8 py-4 cursor-pointer rounded-lg hover:bg-orange-400 hover:text-white">Luch</div>
-              <div class="px-8 py-4 cursor-pointer rounded-lg hover:bg-orange-400 hover:text-white">Dinner</div>
-              <div class="px-8 py-4 cursor-pointer rounded-lg hover:bg-orange-400 hover:text-white">Drinks</div>
-              <div class="px-8 py-4 cursor-pointer rounded-lg hover:bg-orange-400 hover:text-white">Snacks &amp; Desserts</div>
+              <div class="px-8 py-4 cursor-pointer rounded-lg transition-all hover:bg-orange-400 hover:text-white hover:shadow-md">Luch</div>
+              <div class="px-8 py-4 cursor-pointer rounded-lg transition-all hover:bg-orange-400 hover:text-white hover:shadow-md">Dinner</div>
+              <div class="px-8 py-4 cursor-pointer rounded-lg transition-all hover:bg-orange-400 hover:text-white hover:shadow-md">Drinks</div>
+              <div class="px-8 py-4 cursor-pointer rounded-lg transition-all hover:bg-orange-400 hover:text-white hover:shadow-md">Snacks &amp; Desserts</div>
             </div>
             <div class="grid grid-cols-2 gap-8"> 
               <div class="flex flex-col relative"><img class="rounded-lg" src="./src/assets/images/food5.png" alt="food">
@@ -178,7 +178,7 @@
                     <ion-icon class="text-orange-400" name="star"></ion-icon>
                     <ion-icon class="text-orange-400" name="star"></ion-icon>
                     <ion-icon class="text-orange-400" name="star"></ion-icon>
-                  </div><a class="px-6 py-3 rounded-lg text-center bg-white font-semibold capitalize hover:bg-orange-400 hover:text-white" href="">Order now</a>
+                  </div><a class="px-6 py-3 rounded-lg text-center bg-white font-semibold capitalize transition-all hover:bg-orange-400 hover:text-white" href="">Order now</a>
                 </div>
               </div>
               <div class="flex flex-col relative"><img class="rounded-lg" src="./src/assets/images/food6.png" alt="food">
@@ -190,7 +190,7 @@
                     <ion-icon class="text-orange-400" name="star"></ion-icon>
                     <ion-icon class="text-orange-400" name="star"></ion-icon>
                     <ion-icon class="text-orange-400" name="star"></ion-icon>
-                  </div><a class="px-6 py-3 rounded-lg text-center bg-white font-semibold capitalize hover:bg-orange-400 hover:text-white" href="">Order now</a>
+                  </div><a class="px-6 py-3 rounded-lg text-center bg-white font-semibold capitalize transition-all hover:bg-orange-400 hover:text-white" href="">Order now</a>
                 </div>
               </div>
             </div>
@@ -208,10 +208,10 @@
               </div>
             </div>
             <div class="flex gap-4 mt-8">
-              <div class="w-12 h-12 rounded-lg border-2 border-gray-300 flex justify-center items-center text-gray-300 text-xl cursor-pointer hover:text-white hover:bg-orange-400 hover:border-orange-400"> 
+              <div class="w-12 h-12 rounded-lg border-2 border-gray-300 flex justify-center items-center text-gray-300 text-xl cursor-pointer transition-all hover:text-white hover:bg-orange-400 hover:border-orange-400"> 
                 <ion-icon name="arrow-back"></ion-icon>
               </div>
-              <div class="w-12 h-12 rounded-lg border-2 border-gray-300 flex justify-center items-center text-gray-300 text-xl cursor-pointer hover:text-white hover:bg-orange-400 hover:border-orange-400"> 
+              <div class="w-12 h-12 rounded-lg border-2 border-gray-300 flex justify-center items-center text-gray-300 text-xl cursor-pointer transition-all hover:text-white hover:bg-orange-400 hover:border-orange-400"> 
                 <ion-icon name="arrow-forward"></ion-icon>
               </div>
             </div>
@@ -219,31 +219,31 @@
           <div class="flex justify-end">
             <div class="max-w-md"> 
               <div class="font-extrabold text-5xl capitalize">What our clients say about us. </div>
-              <p class="mt-4">Read what our clients say about us. Know the best feedback from them.</p><a class="mt-8 flex items-center" href="">
-                <div class="h-14 flex justify-center items-center bg-orange-400 text-white px-8 font-semibold rounded-tl-lg rounded-bl-lg capitalize">Read all</div>
-                <div class="h-14 px-4 bg-white flex justify-center items-center text-xl rounded-tr-lg rounded-br-lg">
+              <p class="mt-4">Read what our clients say about us. Know the best feedback from them.</p><a class="mt-8 flex items-center group w-fit" href="">
+                <div class="h-14 flex justify-center items-center bg-orange-400 text-white px-8 font-semibold rounded-tl-lg rounded-bl-lg capitalize transition-all group-hover:bg-white group-hover:text-orange-400 group-hover:shadow-md">Read all</div>
+                <div class="h-14 px-4 bg-white flex justify-center items-center text-xl rounded-tr-lg rounded-br-lg transition-all group-hover:bg-orange-400 group-hover:text-white group-hover:shadow-md">
                   <ion-icon name="chevron-forward"></ion-icon>
                 </div></a>
             </div>
           </div>
         </div>
       </div>
-      <div class="w-full bg-orange-400 flex flex-col justify-center items-center">
+      <div class="scroll-mt-16 w-full bg-orange-400 flex flex-col justify-center items-center" id="about">
         <div class="w-full max-w-6xl py-20 text-white">
           <div class="font-extrabold text-5xl capitalize">Our newsletter </div>
           <div class="grid grid-cols-2 mt-8"> 
             <div>
               <div class="flex">
-                <input class="w-80 p-4 border border-white rounded-tl-lg rounded-bl-lg outline-none bg-transparent focus:outline-none placeholder:text-white" type="text" placeholder="Enter your email address"><a class="px-8 py-4 bg-amber-900 font-semibold rounded-lg -ml-2" href="">Subscribe</a>
+                <input class="w-80 p-4 border border-white rounded-tl-lg rounded-bl-lg outline-none bg-transparent focus:outline-none placeholder:text-white" type="text" placeholder="Enter your email address"><a class="px-8 py-4 bg-amber-900 font-semibold rounded-lg transition-all -ml-2 hover:bg-white hover:shadow-md hover:text-orange-400" href="">Subscribe</a>
               </div>
               <p class="mt-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel dolorum molestias dignissimos, quibusdam mollitia qui perferendis ullam reiciendis maiores ipsam.</p>
             </div>
             <div class="flex flex-col items-end">
               <div class="font-semibold text-xl">Follow us </div>
               <div class="mt-4 flex rounded-lg"><a href=""> 
-                  <ion-icon class="icon-ml text-2xl border border-white p-4 hover:text-orange-400 hover:bg-white" name="logo-facebook"></ion-icon></a><a href=""> 
-                  <ion-icon class="icon-ml text-2xl border border-white p-4 hover:text-orange-400 hover:bg-white" name="logo-twitter"></ion-icon></a><a href=""> 
-                  <ion-icon class="icon-ml text-2xl border border-white p-4 hover:text-orange-400 hover:bg-white" name="logo-instagram"></ion-icon></a>
+                  <ion-icon class="icon-ml text-2xl border border-white p-4 transition-all hover:text-orange-400 hover:bg-white" name="logo-facebook"></ion-icon></a><a href=""> 
+                  <ion-icon class="icon-ml text-2xl border border-white p-4 transition-all hover:text-orange-400 hover:bg-white" name="logo-twitter"></ion-icon></a><a href=""> 
+                  <ion-icon class="icon-ml text-2xl border border-white p-4 transition-all hover:text-orange-400 hover:bg-white" name="logo-instagram"></ion-icon></a>
               </div>
             </div>
           </div>
@@ -257,45 +257,45 @@
               <video class="my-4 rounded-lg" controls width="448" height="252">
                 <source src="./src/assets/videos/cooking.mp4" type="video/mp4">
               </video>
-              <div class="flex justify-between text-orange-200"><a href="">Terms</a><a href="">Privacy</a><a href="">Return</a><a href="">Contact us</a>
+              <div class="flex justify-between text-orange-200"><a class="link" href="">Terms</a><a class="link" href="">Privacy</a><a class="link" href="">Return</a><a class="link" href="">Contact us</a>
               </div>
             </div>
             <div class="grid grid-cols-4">
               <div class="flex flex-col items-end">
                 <div class="font-semibold">Explore</div>
                 <div class="mt-4 flex flex-col items-end gap-4">
-                  <div class="text-orange-200"><a href="">Pricing</a></div>
-                  <div class="text-orange-200"><a href="">Updates</a></div>
-                  <div class="text-orange-200"><a href="">Beta</a></div>
-                  <div class="text-orange-200"><a href="">Newsletter</a></div>
-                  <div class="text-orange-200"><a href="">Collaborations</a></div>
+                  <div class="text-orange-200"><a class="link" href="">Pricing</a></div>
+                  <div class="text-orange-200"><a class="link" href="">Updates</a></div>
+                  <div class="text-orange-200"><a class="link" href="">Beta</a></div>
+                  <div class="text-orange-200"><a class="link" href="">Newsletter</a></div>
+                  <div class="text-orange-200"><a class="link" href="">Collaborations</a></div>
                 </div>
               </div>
               <div class="flex flex-col items-end">
                 <div class="font-semibold">Product</div>
                 <div class="mt-4 flex flex-col items-end gap-4">
-                  <div class="text-orange-200"><a href="">Business</a></div>
-                  <div class="text-orange-200"><a href="">Designers</a></div>
-                  <div class="text-orange-200"><a href="">Classrooms</a></div>
-                  <div class="text-orange-200"><a href="">Newcomers</a></div>
+                  <div class="text-orange-200"><a class="link" href="">Business</a></div>
+                  <div class="text-orange-200"><a class="link" href="">Designers</a></div>
+                  <div class="text-orange-200"><a class="link" href="">Classrooms</a></div>
+                  <div class="text-orange-200"><a class="link" href="">Newcomers</a></div>
                 </div>
               </div>
               <div class="flex flex-col items-end">
                 <div class="font-semibold">Learning</div>
                 <div class="mt-4 flex flex-col items-end gap-4">
-                  <div class="text-orange-200"><a href="">Courses</a></div>
-                  <div class="text-orange-200"><a href="">Manuals</a></div>
-                  <div class="text-orange-200"><a href="">Tutorials</a></div>
-                  <div class="text-orange-200"><a href="">Communities</a></div>
+                  <div class="text-orange-200"><a class="link" href="">Courses</a></div>
+                  <div class="text-orange-200"><a class="link" href="">Manuals</a></div>
+                  <div class="text-orange-200"><a class="link" href="">Tutorials</a></div>
+                  <div class="text-orange-200"><a class="link" href="">Communities</a></div>
                 </div>
               </div>
               <div class="flex flex-col items-end">
                 <div class="font-semibold">Resources</div>
                 <div class="mt-4 flex flex-col items-end gap-4">
-                  <div class="text-orange-200"><a href="">Tutorials</a></div>
-                  <div class="text-orange-200"><a href="">Editorials</a></div>
-                  <div class="text-orange-200"><a href="">Product</a></div>
-                  <div class="text-orange-200"><a href="">Newsroom</a></div>
+                  <div class="text-orange-200"><a class="link" href="">Tutorials</a></div>
+                  <div class="text-orange-200"><a class="link" href="">Editorials</a></div>
+                  <div class="text-orange-200"><a class="link" href="">Product</a></div>
+                  <div class="text-orange-200"><a class="link" href="">Newsroom</a></div>
                 </div>
               </div>
             </div>
@@ -304,8 +304,8 @@
       </div>
       <div class="w-full bg-gray-900 flex flex-col justify-center items-center text-center">
         <div class="w-full max-w-6xl py-4 text-white"> 
-          <div>Based on design by  <a class="text-orange-400" href="https://webdesign.gdn/product/restaurant-website-potluck/" target="_blank">@webdesign</a></div>
-          <div>Made by <a class="text-orange-400" href="https://yamdev.online/" target="_blank">@yamdev.online</a> in June 2022</div>
+          <div>Based on design by  <a class="text-orange-400 transition-all hover:text-red-400" href="https://webdesign.gdn/product/restaurant-website-potluck/" target="_blank">@webdesign</a></div>
+          <div>Made by <a class="text-orange-400 transition-all hover:text-red-400" href="https://yamdev.online/" target="_blank">@yamdev.online</a> in June 2022</div>
         </div>
       </div>
     </div>

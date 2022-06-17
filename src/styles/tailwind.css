@@ -9,6 +9,30 @@
 }
 
 @layer components {
+  a.link {
+    position: relative;
+  }
+
+  a.link:hover {
+    transition: ease-in-out 0.3s;
+    color: rgb(251 146 60);
+  }
+
+  a.link:hover::before {
+    width: 100%;
+  }
+
+  a.link::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: rgb(251 146 60);
+    left: 0;
+    bottom: -2px;
+    transition: ease-in-out 0.3s;
+  }
+
   .left-18 {
     margin-left: 4.5rem;
   }

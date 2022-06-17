@@ -4,8 +4,13 @@
       span.text-blue-900 meal
       span.text-orange-400 . 
     .flex.gap-12.font-semibold.capitalize
-      each item in ["Home", "Menu", "Services", "About us"]
-        a(href="")= item
+      each item in ["Home", "Categories", "Menu", "About us"]
+        if (item === "Home")
+          a.link(href="#")= item
+        else if (item === "About us")
+          a.link(href="#about")= item
+        else
+          a.link(href=`#${item.toLowerCase()}`)= item
     .flex.gap-4
-      a.px-4.py-2.rounded-lg.bg-orange-400.text-white.uppercase.font-semibold(href="") Sign up
-      a.px-4.py-2.rounded-lg.bg-blue-900.text-white.uppercase.font-semibold(href="") Sign in
+      a.px-4.py-2.rounded-lg.bg-orange-400.text-white.uppercase.font-semibold.transition-all(href="" class="hover:bg-white hover:text-orange-400 hover:shadow-md") Sign up
+      a.px-4.py-2.rounded-lg.bg-blue-900.text-white.uppercase.font-semibold.transition-all(href="" class="hover:bg-white hover:text-blue-900 hover:shadow-md") Sign in
