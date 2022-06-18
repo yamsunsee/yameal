@@ -1,18 +1,15 @@
 .mt-20.w-full.bg-gray-100.flex.flex-col.justify-center.items-center
-  .w-full.max-w-6xl.grid.grid-cols-2.items-center.py-20.gap-20
-    div 
-      q
-        i When I feel very hungry, I always order through them. They brings the food infront of my doorstep. Really an amazing platform for foods. They are providing the best and I enjoy order with them. They has been ensuring the quality foods for all the time.
-      .flex.mt-8.items-center.gap-4 
-        img.w-20.h-20.rounded-full(src="./src/assets/images/avatar4.png", alt="avatar")
-        div 
-          .font-semibold.text-xl Anthony Palnter 
-          div Director of MA 
-      .flex.gap-4.mt-8
-        .w-12.h-12.rounded-lg.border-2.border-gray-300.flex.justify-center.items-center.text-gray-300.text-xl.cursor-pointer.transition-all(class="hover:text-white hover:bg-orange-400 hover:border-orange-400") 
-          ion-icon(name="arrow-back")
-        .w-12.h-12.rounded-lg.border-2.border-gray-300.flex.justify-center.items-center.text-gray-300.text-xl.cursor-pointer.transition-all(class="hover:text-white hover:bg-orange-400 hover:border-orange-400")  
-          ion-icon(name="arrow-forward")
+  .w-full.max-w-6xl.grid.grid-cols-2.py-20.gap-20
+    .testimonial.mb-20
+      each person, index in [{name: "Nicholas Warren", profession: "Doctor", comment: "When I feel very hungry, I always order through them. They brings the food infront of my doorstep. Really an amazing platform for foods. They are providing the best and I enjoy order with them. They has been ensuring the quality foods for all the time."}, {name: "Chelsea Kimmons", profession: "Actress", comment: "I just started with Yameal and the meals are the best available. Friendly service and delivery. It is such a pleasure to deal with this website. Thank you!"}, {name: "Willa Johnston", profession: "Singer", comment: "I have really enjoyed your meals. So tasty. I love the choices. Appreciate your service."}, {name: "Judy Francis", profession: "Teacher", comment: "I recently ordered some meals from Yameal and must add that so far they have been delicious. So easy to order and staff are very helpful. Delivery with a smile."}, {name: "Chandler Morales", profession: "Mechanic", comment: "I got my food very quickly. Can order anytime! This is by far the best food delivery service. Thank you guys for what you do!"}]
+        div
+          q
+            i= person.comment
+          .flex.mt-8.items-center.gap-4 
+            img.w-20.h-20.rounded-full(src=`./src/assets/images/avatar${index}.png`, alt="avatar")
+            div 
+              .font-semibold.text-xl= person.name
+              div= person.profession
     .flex.justify-end
       .max-w-md 
         .font-extrabold.text-5xl.capitalize What our clients say about us. 

@@ -9,13 +9,15 @@
         .h-14.px-4.bg-white.flex.justify-center.items-center.text-xl.rounded-tr-lg.rounded-br-lg.transition-all(class="group-hover:bg-orange-400 group-hover:text-white group-hover:shadow-md")
           ion-icon(name="chevron-forward")
     .flex.justify-end
-      .bg-white.rounded-lg.w-96
-        img.w-full.object-cover(src="./src/assets/images/food0.png", alt="food")
-        .p-8.flex.flex-col.justify-center.items-center
-          .capitalize.font-bold.text-xl Eggs benedict burger 
-          div Price: 
-            span.font-bold.text-xl $25
-          .mt-4 
-            .capitalize.font-semibold.text-lg Delivery info 
-            p We are commited to deliver your food within 30 minutes to your doorstep.
-          a.mt-8.w-full.p-4.rounded-lg.bg-orange-400.text-white.text-center.font-semibold.capitalize.transition-all(href="" class="hover:bg-white hover:text-orange-400 hover:shadow-md") Add to cart
+      .hero.w-96
+        each food, index in [{name: "Banh mi", price: "15$"}, {name: "Com tam", price: "30$"}, {name: "Pho", price: "25$"}, {name: "Ca phe trung", price: "15$"}, {name: "Chuoi nep nuong", price: "5$"}, {name: "Banh trang tron", price: "5$"}, {name: "Goi cuon", price: "15$"}, {name: "Banh xeo", price: "20$"}]
+          .bg-white.rounded-lg.overflow-hidden
+            img.w-full.h-52.object-cover(src=`./src/assets/images/food${index}.png`, alt="food")
+            .p-8.flex.flex-col.justify-center.items-center
+              .capitalize.font-bold.text-xl.text-center= food.name
+              div Price: 
+                span.font-bold.text-xl= food.price
+              .mt-4 
+                .capitalize.font-semibold.text-lg Delivery info 
+                p We are commited to deliver your food within 30 minutes to your doorstep.
+              a.mt-8.w-full.p-4.rounded-lg.bg-orange-400.text-white.text-center.font-semibold.capitalize.transition-all(href="" class="hover:bg-white hover:text-orange-400 hover:shadow-md") Add to cart

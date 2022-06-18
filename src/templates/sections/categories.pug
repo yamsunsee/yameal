@@ -20,14 +20,9 @@
       | foods by categories.
     p.mt-4 Eat the food you dream about at affordable prices.
     p No need to come to us just call us. Explore the best foods by categories.
-    .grid.grid-cols-3.gap-8.mt-8
-      each food, index in [{name: "Fast foods", amount: "50 times"}, {name: "Water & drinks", amount: "50 times"}, {name: "Desert foods", amount: "50 times"}]
-        .flex.flex-col 
-          img.rounded-lg(src=`./src/assets/images/food${index+1}.png`, alt="food")
-          .font-semibold.text-xl.mt-4= food.name 
+    .categories.mt-8.mb-20
+      each food, index in [{name: "Breakfast", amount: "50 times"}, {name: "Lunch", amount: "50 times"}, {name: "Dinner", amount: "50 times"}, {name: "Water & drinks", amount: "50 times"}, {name: "Desert foods", amount: "50 times"}, {name: "Fast foods", amount: "50 times"}]
+        .flex.flex-col.h-52
+          img.w-full.h-full.object-cover.rounded-lg(src=`./src/assets/images/food${index}.png`, alt="food")
+          .font-semibold.text-xl.mt-4.capitalize= food.name 
           div= food.amount
-    .flex.gap-4.self-end.mt-8
-      .w-12.h-12.rounded-lg.border-2.border-gray-300.flex.justify-center.items-center.text-gray-300.text-xl.cursor-pointer.transition-all(class="hover:text-white hover:bg-orange-400 hover:border-orange-400") 
-        ion-icon(name="arrow-back")
-      .w-12.h-12.rounded-lg.border-2.border-gray-300.flex.justify-center.items-center.text-gray-300.text-xl.cursor-pointer.transition-all(class="hover:text-white hover:bg-orange-400 hover:border-orange-400")  
-        ion-icon(name="arrow-forward")
