@@ -1,5 +1,5 @@
-.w-full.bg-amber-900.flex.flex-col.justify-center.items-center
-  .w-full.max-w-6xl.py-20.text-white
+.w-full.bg-amber-900.flex.flex-col.justify-center.items-center.px-4(class="sm:px-8 xl:p-0")
+  .w-full.max-w-6xl.py-8.text-white(class="md:py-20")
     a.font-bold.text-3xl.text-orange-400(href="") Ya
       span.text-blue-600 meal
       span.text-orange-400 .
@@ -11,11 +11,11 @@
         .flex.justify-between.text-orange-200
           each link in ["Terms", "Privacy", "Return", "Contact us"]
             a.link(href="")= link 
-      .grid.grid-cols-4
+      .grid.grid-cols-2.gap-8(class="lg:grid-cols-4 lg:gap-0")
         each links, title in {"Explore": ["Pricing", "Updates", "Beta", "Newsletter", "Collaborations"], "Product": ["Business", "Designers", "Classrooms", "Newcomers"], "Learning": ["Courses", "Manuals", "Tutorials", "Communities"], "Resources": ["Tutorials", "Editorials", "Product", "Newsroom"]}
-          .flex.flex-col.items-end
+          .flex.flex-col(class="md:items-end")
             .font-semibold= title 
-            .mt-4.flex.flex-col.items-end.gap-4
+            .mt-4.flex.flex-col.gap-4(class="md:items-end")
               each link in links 
                 .text-orange-200
                   a.link(href="")= link

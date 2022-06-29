@@ -1,18 +1,18 @@
 .w-full.bg-orange-100.flex.flex-col.justify-center.items-center
-  .w-full.flex.justify-between.items-center.max-w-6xl
-    .flex.w-full.items-end.h-80
-      .w-96.h-60.flex.justify-center.bg-orange-400.relative.rounded-tl-lg.rounded-tr-lg 
+  .w-full.flex.justify-between.items-center.max-w-6xl.px-4(class="sm:px-8 xl:px-0")
+    .flex.flex-col.w-full.items-end(class="md:flex-row md:h-80")
+      .mt-40.w-full.h-60.flex.justify-center.bg-orange-400.relative.rounded-tl-lg.rounded-tr-lg(class="md:w-96 md:rounded-tr-none lg:rounded-tr-lg")
         img.w-60.absolute.bottom-0(src="./src/assets/images/deliveryman.png", alt="deliveryman")
-      .bg-blue-900.w-full.h-fit.rounded-tr-lg.px-12.py-8.grid.grid-cols-2.text-white
+      .bg-blue-900.w-full.h-fit.px-4.py-8.grid.grid-cols-1.text-white(class="lg:grid-cols-2 sm:px-8 md:rounded-tr-lg md:rounded-tl-lg lg:rounded-tl-none")
         div 
-          .font-semibold.text-2xl.w-72 Become a deliveryman of our restaurant.
-          .relative.flex.items-center.mt-4
+          .font-semibold.text-2xl.w-full(class="lg:w-72") Become a deliveryman of our restaurant.
+          .relative.flex.items-center.mt-4.w-full
             ion-icon.absolute.left-4.text-gray-300.text-xl(name="mail-outline")
-            input.py-4.pl-12.pr-4.outline-none.rounded-tl-lg.rounded-bl-lg(type="text" placeholder="Enter your email" class="bg-white/10 .focus:outline-none placeholder:text-gray-300")
+            input.w-full.py-4.pl-12.pr-4.outline-none.rounded-tl-lg.rounded-bl-lg(type="text" placeholder="Enter your email" class="bg-white/10 .focus:outline-none placeholder:text-gray-300")
             a.h-14.flex.justify-center.items-center.px-8.bg-orange-400.rounded-tr-lg.rounded-br-lg.text-xl.transition-all(href="" class="hover:bg-white hover:text-orange-400 hover:shadow-md") 
               ion-icon(name="arrow-forward")
-        .flex.justify-end.items-center
-          .w-40
+        .flex.items-center.mt-8(class="lg:justify-end lg:mt-0")
+          .w-full(class="lg:w-40")
             .flex.items-center.w-9.h-9.relative
               each path in [...Array(3).keys()]
                 .absolute.w-9.h-9.bg-white.rounded-full.flex.justify-center.items-center(class=`left-${path*6}`)

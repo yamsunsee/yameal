@@ -16,28 +16,33 @@
   </head>
   <body class="w-full flex flex-col justify-center items-center select-none"> 
     <div class="w-full flex flex-col justify-center items-center max-w-[120rem]">
-      <div class="w-full bg-orange-100 flex flex-col justify-center items-center sticky top-0 z-10 shadow-md">
+      <div class="w-full bg-orange-100 flex flex-col justify-center items-center sticky top-0 z-20 shadow-md px-4 sm:px-8 xl:px-0">
         <div class="w-full flex justify-between items-center max-w-6xl py-4"><a class="font-bold text-3xl text-orange-400" href="">Ya<span class="text-blue-900">meal</span><span class="text-orange-400">. </span></a>
-          <div class="flex gap-12 font-semibold capitalize"><a class="link" href="#">Home</a><a class="link" href="#categories">Categories</a><a class="link" href="#menu">Menu</a><a class="link" href="#about">About us</a>
+          <div class="gap-4 font-semibold capitalize hidden md:flex lg:gap-12"><a class="link" href="#">Home</a><a class="link" href="#categories">Categories</a><a class="link" href="#menu">Menu</a><a class="link" href="#about">About us</a>
           </div>
-          <div class="flex gap-4"><a class="px-4 py-2 rounded-lg bg-orange-400 text-white uppercase font-semibold transition-all hover:bg-white hover:text-orange-400 hover:shadow-md" href="">Sign up</a><a class="px-4 py-2 rounded-lg bg-blue-900 text-white uppercase font-semibold transition-all hover:bg-white hover:text-blue-900 hover:shadow-md" href="">Sign in</a></div>
+          <div class="hidden gap-4 md:flex"><a class="p-2 rounded-lg bg-orange-400 text-white text-sm uppercase font-semibold transition-all hover:bg-white hover:text-orange-400 hover:shadow-md lg:px-4 lg:py-2" href="">Sign up</a><a class="p-2 rounded-lg bg-blue-900 text-white text-sm uppercase font-semibold transition-all hover:bg-white hover:text-blue-900 hover:shadow-md lg:px-4 lg:py-2" href="">Sign in</a></div>
+          <div class="flex gap-4 md:hidden">
+            <div class="w-12 h-12 bg-orange-400 flex items-center rounded-lg text-3xl text-white flex justify-center items-center hover:bg-white hover:text-orange-400 hover:shadow-md" href="">
+              <ion-icon name="menu-outline"> </ion-icon>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="w-full bg-orange-100 flex flex-col justify-center items-center">
-        <div class="w-full max-w-6xl grid grid-cols-2 items-center mt-12">
+      <div class="w-full bg-orange-100 flex flex-col justify-center items-center px-4 sm:px-8 xl:px-0">
+        <div class="w-full max-w-6xl grid grid-cols-1 items-center mt-12 gap-8 md:grid-cols-2 md:gap-0">
           <div>
             <div class="font-extrabold text-6xl capitalize max-w-lg">Yummy food for busy people.</div>
             <p class="mt-4">Eat the food you dream about at affordable prices.</p>
-            <p>No need to come to us just call us.</p><a class="mt-8 flex items-center group w-fit" href="">
+            <p>No need to come to us just call us.</p><a class="mt-8 flex items-center group w-fit" href="#menu">
               <div class="h-14 flex justify-center items-center bg-orange-400 text-white px-8 font-semibold rounded-tl-lg rounded-bl-lg capitalize transition-all group-hover:bg-white group-hover:text-orange-400 group-hover:shadow-md">Explore menu</div>
               <div class="h-14 px-4 bg-white flex justify-center items-center text-xl rounded-tr-lg rounded-br-lg transition-all group-hover:bg-orange-400 group-hover:text-white group-hover:shadow-md">
                 <ion-icon name="chevron-forward"></ion-icon>
               </div></a>
           </div>
-          <div class="flex justify-end">
-            <div class="hero w-96">
+          <div class="flex justify-center md:justify-end">
+            <div class="hero w-[20.5rem] sm:max-w-sm lg:w-full">
               <div class="bg-white rounded-lg overflow-hidden"><img class="w-full h-52 object-cover" src="./src/assets/images/food0.png" alt="food">
-                <div class="p-8 flex flex-col justify-center items-center">
+                <div class="p-8 flex flex-col justify-center items-center md:p-4 lg:p-8">
                   <div class="capitalize font-bold text-xl text-center">Banh mi</div>
                   <div>Price: <span class="font-bold text-xl">15$</span></div>
                   <div class="mt-4"> 
@@ -47,7 +52,7 @@
                 </div>
               </div>
               <div class="bg-white rounded-lg overflow-hidden"><img class="w-full h-52 object-cover" src="./src/assets/images/food1.png" alt="food">
-                <div class="p-8 flex flex-col justify-center items-center">
+                <div class="p-8 flex flex-col justify-center items-center md:p-4 lg:p-8">
                   <div class="capitalize font-bold text-xl text-center">Com tam</div>
                   <div>Price: <span class="font-bold text-xl">30$</span></div>
                   <div class="mt-4"> 
@@ -57,7 +62,7 @@
                 </div>
               </div>
               <div class="bg-white rounded-lg overflow-hidden"><img class="w-full h-52 object-cover" src="./src/assets/images/food2.png" alt="food">
-                <div class="p-8 flex flex-col justify-center items-center">
+                <div class="p-8 flex flex-col justify-center items-center md:p-4 lg:p-8">
                   <div class="capitalize font-bold text-xl text-center">Pho</div>
                   <div>Price: <span class="font-bold text-xl">25$</span></div>
                   <div class="mt-4"> 
@@ -67,7 +72,7 @@
                 </div>
               </div>
               <div class="bg-white rounded-lg overflow-hidden"><img class="w-full h-52 object-cover" src="./src/assets/images/food3.png" alt="food">
-                <div class="p-8 flex flex-col justify-center items-center">
+                <div class="p-8 flex flex-col justify-center items-center md:p-4 lg:p-8">
                   <div class="capitalize font-bold text-xl text-center">Ca phe trung</div>
                   <div>Price: <span class="font-bold text-xl">15$</span></div>
                   <div class="mt-4"> 
@@ -77,7 +82,7 @@
                 </div>
               </div>
               <div class="bg-white rounded-lg overflow-hidden"><img class="w-full h-52 object-cover" src="./src/assets/images/food4.png" alt="food">
-                <div class="p-8 flex flex-col justify-center items-center">
+                <div class="p-8 flex flex-col justify-center items-center md:p-4 lg:p-8">
                   <div class="capitalize font-bold text-xl text-center">Chuoi nep nuong</div>
                   <div>Price: <span class="font-bold text-xl">5$</span></div>
                   <div class="mt-4"> 
@@ -87,7 +92,7 @@
                 </div>
               </div>
               <div class="bg-white rounded-lg overflow-hidden"><img class="w-full h-52 object-cover" src="./src/assets/images/food5.png" alt="food">
-                <div class="p-8 flex flex-col justify-center items-center">
+                <div class="p-8 flex flex-col justify-center items-center md:p-4 lg:p-8">
                   <div class="capitalize font-bold text-xl text-center">Banh trang tron</div>
                   <div>Price: <span class="font-bold text-xl">5$</span></div>
                   <div class="mt-4"> 
@@ -97,7 +102,7 @@
                 </div>
               </div>
               <div class="bg-white rounded-lg overflow-hidden"><img class="w-full h-52 object-cover" src="./src/assets/images/food6.png" alt="food">
-                <div class="p-8 flex flex-col justify-center items-center">
+                <div class="p-8 flex flex-col justify-center items-center md:p-4 lg:p-8">
                   <div class="capitalize font-bold text-xl text-center">Goi cuon</div>
                   <div>Price: <span class="font-bold text-xl">15$</span></div>
                   <div class="mt-4"> 
@@ -107,7 +112,7 @@
                 </div>
               </div>
               <div class="bg-white rounded-lg overflow-hidden"><img class="w-full h-52 object-cover" src="./src/assets/images/food7.png" alt="food">
-                <div class="p-8 flex flex-col justify-center items-center">
+                <div class="p-8 flex flex-col justify-center items-center md:p-4 lg:p-8">
                   <div class="capitalize font-bold text-xl text-center">Banh xeo</div>
                   <div>Price: <span class="font-bold text-xl">20$</span></div>
                   <div class="mt-4"> 
@@ -121,20 +126,20 @@
         </div>
       </div>
       <div class="w-full bg-orange-100 flex flex-col justify-center items-center">
-        <div class="w-full flex justify-between items-center max-w-6xl">
-          <div class="flex w-full items-end h-80">
-            <div class="w-96 h-60 flex justify-center bg-orange-400 relative rounded-tl-lg rounded-tr-lg"> <img class="w-60 absolute bottom-0" src="./src/assets/images/deliveryman.png" alt="deliveryman"></div>
-            <div class="bg-blue-900 w-full h-fit rounded-tr-lg px-12 py-8 grid grid-cols-2 text-white">
+        <div class="w-full flex justify-between items-center max-w-6xl px-4 sm:px-8 xl:px-0">
+          <div class="flex flex-col w-full items-end md:flex-row md:h-80">
+            <div class="mt-40 w-full h-60 flex justify-center bg-orange-400 relative rounded-tl-lg rounded-tr-lg md:w-96 md:rounded-tr-none lg:rounded-tr-lg"><img class="w-60 absolute bottom-0" src="./src/assets/images/deliveryman.png" alt="deliveryman"></div>
+            <div class="bg-blue-900 w-full h-fit px-4 py-8 grid grid-cols-1 text-white lg:grid-cols-2 sm:px-8 md:rounded-tr-lg md:rounded-tl-lg lg:rounded-tl-none">
               <div> 
-                <div class="font-semibold text-2xl w-72">Become a deliveryman of our restaurant.</div>
-                <div class="relative flex items-center mt-4">
+                <div class="font-semibold text-2xl w-full lg:w-72">Become a deliveryman of our restaurant.</div>
+                <div class="relative flex items-center mt-4 w-full">
                   <ion-icon class="absolute left-4 text-gray-300 text-xl" name="mail-outline"></ion-icon>
-                  <input class="py-4 pl-12 pr-4 outline-none rounded-tl-lg rounded-bl-lg bg-white/10 .focus:outline-none placeholder:text-gray-300" type="text" placeholder="Enter your email"><a class="h-14 flex justify-center items-center px-8 bg-orange-400 rounded-tr-lg rounded-br-lg text-xl transition-all hover:bg-white hover:text-orange-400 hover:shadow-md" href=""> 
+                  <input class="w-full py-4 pl-12 pr-4 outline-none rounded-tl-lg rounded-bl-lg bg-white/10 .focus:outline-none placeholder:text-gray-300" type="text" placeholder="Enter your email"><a class="h-14 flex justify-center items-center px-8 bg-orange-400 rounded-tr-lg rounded-br-lg text-xl transition-all hover:bg-white hover:text-orange-400 hover:shadow-md" href=""> 
                     <ion-icon name="arrow-forward"></ion-icon></a>
                 </div>
               </div>
-              <div class="flex justify-end items-center">
-                <div class="w-40">
+              <div class="flex items-center mt-8 lg:justify-end lg:mt-0">
+                <div class="w-full lg:w-40">
                   <div class="flex items-center w-9 h-9 relative">
                     <div class="absolute w-9 h-9 bg-white rounded-full flex justify-center items-center left-0">
                       <div class="w-8"><img class="w-full object-cover rounded-full" src="./src/assets/images/avatar0.png" alt="avatar"></div>
@@ -155,11 +160,11 @@
         </div>
       </div>
       <div class="w-full flex flex-col justify-center items-center max-w-6xl">
-        <div class="scroll-mt-36 w-full grid grid-cols-2 mt-20" id="categories"> 
-          <div class="flex items-center relative">
-            <div class="w-96 h-72 bg-orange-400 relative rounded-lg"> <img class="absolute bottom-0 left-8" src="./src/assets/images/cook.png" alt="cook"></div>
-            <div class="absolute p-8 bg-white rounded-lg left-64 top-8 shadow-md">
-              <div class="font-semibold text-xl">Happy customer</div>
+        <div class="scroll-mt-36 w-full grid grid-cols-1 mt-20 px-4 md:grid-cols-2 sm:px-8 md:gap-12 lg:gap-0 xl:px-0" id="categories">
+          <div class="flex items-center relative sm:justify-center md:justify-start">
+            <div class="mt-12 w-60 h-40 bg-orange-400 relative rounded-lg sm:mt-20 md:mt-0 sm:w-80 sm:h-52 md:w-96 md:h-72"><img class="absolute bottom-0 left-8 z-10" src="./src/assets/images/cook.png" alt="cook"></div>
+            <div class="absolute p-4 bg-white rounded-lg shadow-md left-40 top-0 sm:left-[23rem] sm:right-auto md:left-auto md:right-0 md:top-0 md:p-8 lg:left-52 lg:top-20 xl:left-60 lg:right-auto">
+              <div class="font-semibold sm:text-xl">Happy customer</div>
               <div class="flex items-center w-9 h-9 relative mt-2">
                 <div class="absolute w-9 h-9 bg-white rounded-full flex justify-center items-center left-0">
                   <div class="w-8"><img class="rounded-full" src="./src/assets/images/avatar0.png" alt="avatar"></div>
@@ -179,12 +184,12 @@
               </div>
               <div class="flex items-center mt-4"> 
                 <ion-icon class="text-orange-400 mr-2 leading-6" name="star"></ion-icon>
-                <div>4,8 (1320 reviews)</div>
+                <div class="text-xs sm:text-base">4,8 (1320 reviews)</div>
               </div>
             </div>
           </div>
-          <div class="flex flex-col"> 
-            <div class="font-extrabold text-5xl capitalize">Explore the best<br>foods by categories.</div>
+          <div class="mt-8 flex flex-col md:mt-0">
+            <div class="font-extrabold text-5xl capitalize">Explore the best<br class="md:hidden lg:block">foods by categories.</div>
             <p class="mt-4">Eat the food you dream about at affordable prices.</p>
             <p>No need to come to us just call us. Explore the best foods by categories.</p>
             <div class="categories mt-8 mb-20">
@@ -215,31 +220,30 @@
             </div>
           </div>
         </div>
-        <div class="w-full h-96 mt-20 relative rounded-lg overflow-hidden"><img class="w-full h-full object-cover" src="./src/assets/images/food2.png" alt="food">
-          <div class="absolute w-full h-full top-0 left-0 text-white flex flex-col justify-center items-center text-center bg-gradient-to-t from-transparent to-black/80">
-            <div class="font-semibold text-4xl">Get up to 50% off when<br>booking a table for dinner </div>
-            <div class="mt-4">Eat the food you dream about at affordable prices.</div>
-            <p>No need to come to us just call us. Explore the best foods by categories.</p><a class="mt-8 px-8 py-4 rounded-lg bg-orange-400 text-white text-center font-semibold capitalize transition-all hover:bg-white hover:text-orange-400 hover:shadow-md" href="">Book now</a>
+        <div class="w-full h-96 mt-4 relative overflow-hidden md:mt-20 xl:rounded-lg"><img class="w-full h-full object-cover" src="./src/assets/images/food2.png" alt="food">
+          <div class="absolute w-full h-full top-0 left-0 text-white flex flex-col justify-center items-center text-center p-4 bg-black/60 sm:p-8">
+            <div class="font-semibold text-4xl">Get up to<span class="text-orange-400"> 50% off</span> when<br class="hidden md:block"> booking a table for dinner </div>
+            <div class="mt-4 text-sm md:w-[35rem] md:text-base">Eat the food you dream about at affordable prices. No need to come to us just call us. Explore the best foods by categories.</div><a class="mt-8 px-8 py-4 rounded-lg bg-orange-400 text-white text-center font-semibold capitalize transition-all hover:bg-white hover:text-orange-400 hover:shadow-md" href="">Book now</a>
           </div>
         </div>
-        <div class="scroll-mt-36 w-full mt-20" id="menu"> 
+        <div class="scroll-mt-36 w-full mt-8 px-4 sm:px-8 xl:px-0 md:mt-20" id="menu"> 
           <div class="font-extrabold text-5xl max-w-md capitalize">Our delicious food menu. </div>
           <div class="max-w-xl mt-4">
             <p>Eat the food you dream about at affordable prices.</p>
             <p>No need to come to us just call us. Explore the best foods by categories.</p>
           </div>
-          <div class="menu-layout mt-8"> 
-            <div class="font-semibold text-xl flex flex-col justify-center gap-4">
-              <div class="px-8 py-4 border-r-4 border-r-orange-400 text-orange-400">Breakfast</div>
-              <div class="px-8 py-4 cursor-pointer rounded-lg transition-all hover:bg-orange-400 hover:text-white hover:shadow-md">Luch</div>
-              <div class="px-8 py-4 cursor-pointer rounded-lg transition-all hover:bg-orange-400 hover:text-white hover:shadow-md">Dinner</div>
-              <div class="px-8 py-4 cursor-pointer rounded-lg transition-all hover:bg-orange-400 hover:text-white hover:shadow-md">Water &amp; drinks</div>
-              <div class="px-8 py-4 cursor-pointer rounded-lg transition-all hover:bg-orange-400 hover:text-white hover:shadow-md">Snacks &amp; desserts</div>
+          <div class="menu-layout mt-8">
+            <div class="font-semibold flex flex-col justify-center gap-4 text-xl">
+              <div class="menu-item selected" style="--value: 0">Breakfast</div>
+              <div class="menu-item hoverable">Luch</div>
+              <div class="menu-item hoverable">Dinner</div>
+              <div class="menu-item hoverable">Water &amp; drinks</div>
+              <div class="menu-item hoverable">Snacks &amp; desserts</div>
             </div>
             <div class="bg-red">
-              <div class="menu w-[47rem]">
+              <div class="menu w-48 sm:w-72 md:w-[28rem] lg:w-[47rem]">
                 <div class="flex flex-col relative h-96 rounded-lg overflow-hidden"><img class="w-full h-full object-cover" src="./src/assets/images/food0.png" alt="food">
-                  <div class="w-full h-full absolute left-0 top-0 flex justify-between items-end p-8 bg-gradient-to-b from-transparent to-black/80">
+                  <div class="w-full h-full absolute left-0 top-0 flex flex-col justify-between p-4 bg-gradient-to-b from-black/80 via-transparent to-black/80 md:from-transparent md:to-black/80 md:p-8 md:flex-row md:items-end">
                     <div> 
                       <div class="font-semibold text-white capitalize">Banh mi</div>
                       <ion-icon class="text-orange-400" name="star"></ion-icon>
@@ -251,7 +255,7 @@
                   </div>
                 </div>
                 <div class="flex flex-col relative h-96 rounded-lg overflow-hidden"><img class="w-full h-full object-cover" src="./src/assets/images/food1.png" alt="food">
-                  <div class="w-full h-full absolute left-0 top-0 flex justify-between items-end p-8 bg-gradient-to-b from-transparent to-black/80">
+                  <div class="w-full h-full absolute left-0 top-0 flex flex-col justify-between p-4 bg-gradient-to-b from-black/80 via-transparent to-black/80 md:from-transparent md:to-black/80 md:p-8 md:flex-row md:items-end">
                     <div> 
                       <div class="font-semibold text-white capitalize">Com tam</div>
                       <ion-icon class="text-orange-400" name="star"></ion-icon>
@@ -263,7 +267,7 @@
                   </div>
                 </div>
                 <div class="flex flex-col relative h-96 rounded-lg overflow-hidden"><img class="w-full h-full object-cover" src="./src/assets/images/food2.png" alt="food">
-                  <div class="w-full h-full absolute left-0 top-0 flex justify-between items-end p-8 bg-gradient-to-b from-transparent to-black/80">
+                  <div class="w-full h-full absolute left-0 top-0 flex flex-col justify-between p-4 bg-gradient-to-b from-black/80 via-transparent to-black/80 md:from-transparent md:to-black/80 md:p-8 md:flex-row md:items-end">
                     <div> 
                       <div class="font-semibold text-white capitalize">Pho</div>
                       <ion-icon class="text-orange-400" name="star"></ion-icon>
@@ -275,7 +279,7 @@
                   </div>
                 </div>
                 <div class="flex flex-col relative h-96 rounded-lg overflow-hidden"><img class="w-full h-full object-cover" src="./src/assets/images/food3.png" alt="food">
-                  <div class="w-full h-full absolute left-0 top-0 flex justify-between items-end p-8 bg-gradient-to-b from-transparent to-black/80">
+                  <div class="w-full h-full absolute left-0 top-0 flex flex-col justify-between p-4 bg-gradient-to-b from-black/80 via-transparent to-black/80 md:from-transparent md:to-black/80 md:p-8 md:flex-row md:items-end">
                     <div> 
                       <div class="font-semibold text-white capitalize">Ca phe trung</div>
                       <ion-icon class="text-orange-400" name="star"></ion-icon>
@@ -291,9 +295,19 @@
           </div>
         </div>
       </div>
-      <div class="mt-20 w-full bg-gray-100 flex flex-col justify-center items-center">
-        <div class="w-full max-w-6xl grid grid-cols-2 py-20 gap-20">
-          <div class="testimonial mb-20">
+      <div class="mt-20 w-full bg-gray-100 flex flex-col justify-center items-center p-4 sm:px-8 xl:p-0">
+        <div class="w-full max-w-6xl grid grid-cols-1 py-4 gap-8 md:py-20 md:grid-cols-2">
+          <div class="flex md:order-2 md:justify-end">
+            <div class="max-w-md"> 
+              <div class="font-extrabold text-5xl capitalize">What our clients say about us. </div>
+              <p class="mt-4">Read what our clients say about us. Know the best feedback from them.</p><a class="mt-8 flex items-center group w-fit" href="">
+                <div class="h-14 flex justify-center items-center bg-orange-400 text-white px-8 font-semibold rounded-tl-lg rounded-bl-lg capitalize transition-all group-hover:bg-white group-hover:text-orange-400 group-hover:shadow-md">Read all</div>
+                <div class="h-14 px-4 bg-white flex justify-center items-center text-xl rounded-tr-lg rounded-br-lg transition-all group-hover:bg-orange-400 group-hover:text-white group-hover:shadow-md">
+                  <ion-icon name="chevron-forward"></ion-icon>
+                </div></a>
+            </div>
+          </div>
+          <div class="testimonial mb-12 md:mb-20 md:order-1">
             <div>
               <q><i>When I feel very hungry, I always order through them. They brings the food infront of my doorstep. Really an amazing platform for foods. They are providing the best and I enjoy order with them. They has been ensuring the quality foods for all the time.</i></q>
               <div class="flex mt-8 items-center gap-4"> <img class="w-20 h-20 rounded-full" src="./src/assets/images/avatar0.png" alt="avatar">
@@ -340,29 +354,19 @@
               </div>
             </div>
           </div>
-          <div class="flex justify-end">
-            <div class="max-w-md"> 
-              <div class="font-extrabold text-5xl capitalize">What our clients say about us. </div>
-              <p class="mt-4">Read what our clients say about us. Know the best feedback from them.</p><a class="mt-8 flex items-center group w-fit" href="">
-                <div class="h-14 flex justify-center items-center bg-orange-400 text-white px-8 font-semibold rounded-tl-lg rounded-bl-lg capitalize transition-all group-hover:bg-white group-hover:text-orange-400 group-hover:shadow-md">Read all</div>
-                <div class="h-14 px-4 bg-white flex justify-center items-center text-xl rounded-tr-lg rounded-br-lg transition-all group-hover:bg-orange-400 group-hover:text-white group-hover:shadow-md">
-                  <ion-icon name="chevron-forward"></ion-icon>
-                </div></a>
-            </div>
-          </div>
         </div>
       </div>
-      <div class="scroll-mt-16 w-full bg-orange-400 flex flex-col justify-center items-center" id="about">
-        <div class="w-full max-w-6xl py-20 text-white">
+      <div class="scroll-mt-16 w-full bg-orange-400 flex flex-col justify-center items-center px-4 sm:px-8 xl:p-0" id="about">
+        <div class="w-full max-w-6xl py-8 text-white md:py-20">
           <div class="font-extrabold text-5xl capitalize">Our newsletter </div>
-          <div class="grid grid-cols-2 mt-8"> 
+          <div class="grid grid-cols-1 mt-8 md:grid-cols-2">
             <div>
               <div class="flex">
-                <input class="w-80 p-4 border border-white rounded-tl-lg rounded-bl-lg outline-none bg-transparent focus:outline-none placeholder:text-white" type="text" placeholder="Enter your email address"><a class="px-8 py-4 bg-amber-900 font-semibold rounded-lg transition-all -ml-2 hover:bg-white hover:shadow-md hover:text-orange-400" href="">Subscribe</a>
+                <input class="w-48 p-4 border border-white rounded-tl-lg rounded-bl-lg outline-none bg-transparent focus:outline-none placeholder:text-white md:w-80" type="text" placeholder="Enter your email address"><a class="px-8 py-4 bg-amber-900 font-semibold rounded-lg transition-all -ml-2 hover:bg-white hover:shadow-md hover:text-orange-400" href="">Subscribe</a>
               </div>
               <p class="mt-8">Email newsletters can include a weekly round-up of blog posts, case studies regarding our product or service, upcoming company events and webinars, or even a behind-the-scenes look at our company.</p>
             </div>
-            <div class="flex flex-col items-end">
+            <div class="flex flex-col mt-8 md:items-end md:mt-0">
               <div class="font-semibold text-xl">Follow us </div>
               <div class="mt-4 flex rounded-lg"><a href=""> 
                   <ion-icon class="icon-ml text-2xl border border-white p-4 transition-all hover:text-orange-400 hover:bg-white" name="logo-facebook"></ion-icon></a><a href=""> 
@@ -373,8 +377,8 @@
           </div>
         </div>
       </div>
-      <div class="w-full bg-amber-900 flex flex-col justify-center items-center">
-        <div class="w-full max-w-6xl py-20 text-white"><a class="font-bold text-3xl text-orange-400" href="">Ya<span class="text-blue-600">meal</span><span class="text-orange-400">.</span></a>
+      <div class="w-full bg-amber-900 flex flex-col justify-center items-center px-4 sm:px-8 xl:p-0">
+        <div class="w-full max-w-6xl py-8 text-white md:py-20"><a class="font-bold text-3xl text-orange-400" href="">Ya<span class="text-blue-600">meal</span><span class="text-orange-400">.</span></a>
           <div class="mt-4 footer-layout"> 
             <div> 
               <div class="font-semibold">Watch how we prepare our food and deliver you.</div>
@@ -384,10 +388,10 @@
               <div class="flex justify-between text-orange-200"><a class="link" href="">Terms</a><a class="link" href="">Privacy</a><a class="link" href="">Return</a><a class="link" href="">Contact us</a>
               </div>
             </div>
-            <div class="grid grid-cols-4">
-              <div class="flex flex-col items-end">
+            <div class="grid grid-cols-2 gap-8 lg:grid-cols-4 lg:gap-0">
+              <div class="flex flex-col md:items-end">
                 <div class="font-semibold">Explore</div>
-                <div class="mt-4 flex flex-col items-end gap-4">
+                <div class="mt-4 flex flex-col gap-4 md:items-end">
                   <div class="text-orange-200"><a class="link" href="">Pricing</a></div>
                   <div class="text-orange-200"><a class="link" href="">Updates</a></div>
                   <div class="text-orange-200"><a class="link" href="">Beta</a></div>
@@ -395,27 +399,27 @@
                   <div class="text-orange-200"><a class="link" href="">Collaborations</a></div>
                 </div>
               </div>
-              <div class="flex flex-col items-end">
+              <div class="flex flex-col md:items-end">
                 <div class="font-semibold">Product</div>
-                <div class="mt-4 flex flex-col items-end gap-4">
+                <div class="mt-4 flex flex-col gap-4 md:items-end">
                   <div class="text-orange-200"><a class="link" href="">Business</a></div>
                   <div class="text-orange-200"><a class="link" href="">Designers</a></div>
                   <div class="text-orange-200"><a class="link" href="">Classrooms</a></div>
                   <div class="text-orange-200"><a class="link" href="">Newcomers</a></div>
                 </div>
               </div>
-              <div class="flex flex-col items-end">
+              <div class="flex flex-col md:items-end">
                 <div class="font-semibold">Learning</div>
-                <div class="mt-4 flex flex-col items-end gap-4">
+                <div class="mt-4 flex flex-col gap-4 md:items-end">
                   <div class="text-orange-200"><a class="link" href="">Courses</a></div>
                   <div class="text-orange-200"><a class="link" href="">Manuals</a></div>
                   <div class="text-orange-200"><a class="link" href="">Tutorials</a></div>
                   <div class="text-orange-200"><a class="link" href="">Communities</a></div>
                 </div>
               </div>
-              <div class="flex flex-col items-end">
+              <div class="flex flex-col md:items-end">
                 <div class="font-semibold">Resources</div>
-                <div class="mt-4 flex flex-col items-end gap-4">
+                <div class="mt-4 flex flex-col gap-4 md:items-end">
                   <div class="text-orange-200"><a class="link" href="">Tutorials</a></div>
                   <div class="text-orange-200"><a class="link" href="">Editorials</a></div>
                   <div class="text-orange-200"><a class="link" href="">Product</a></div>
@@ -427,7 +431,7 @@
         </div>
       </div>
       <div class="w-full bg-gray-900 flex flex-col justify-center items-center text-center">
-        <div class="w-full max-w-6xl py-4 text-white"> 
+        <div class="w-full max-w-6xl py-8 text-white"> 
           <div>Based on design by  <a class="text-orange-400 transition-all hover:text-red-400" href="https://webdesign.gdn/product/restaurant-website-potluck/" target="_blank">@webdesign</a></div>
           <div>Made by <a class="text-orange-400 transition-all hover:text-red-400" href="https://yamdev.online/" target="_blank">@yamdev.online</a> in June 2022</div>
         </div>

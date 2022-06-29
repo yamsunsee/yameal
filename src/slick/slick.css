@@ -106,33 +106,63 @@
 .slick-list {
   margin: 0 -1rem;
 }
-.slick-arrow#prev {
+.slick-arrow {
   position: absolute;
+  width: 3rem;
+  height: 3rem;
+  color: #d1d5db;
+  border-radius: 0.5rem;
+  border: solid 2px #d1d5db;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: cubic-bezier(0.4, 0, 0.2, 1) 0.15s;
+}
+.slick-arrow:hover {
+  color: white;
+  border-color: #fb922c;
+  background-color: #fb922c;
+}
+.slick-arrow#prev {
   right: 4rem;
   bottom: -4rem;
 }
 .slick-arrow#next {
-  position: absolute;
   right: 0;
   bottom: -4rem;
 }
 .slick-arrow#prev2 {
-  position: absolute;
   right: 4rem;
-  top: -5.5rem;
+  bottom: -4rem;
 }
 .slick-arrow#next2 {
-  position: absolute;
   right: 0;
-  top: -5.5rem;
+  bottom: -4rem;
 }
 .slick-arrow#prev3 {
-  position: absolute;
-  left: 0;
+  right: 4rem;
   bottom: -4rem;
 }
 .slick-arrow#next3 {
-  position: absolute;
-  left: 4rem;
+  right: 0;
   bottom: -4rem;
+}
+@media screen and (min-width: 768px) {
+  .slick-arrow#prev2 {
+    right: 4rem;
+    top: -5.5rem;
+  }
+  .slick-arrow#next2 {
+    right: 0;
+    top: -5.5rem;
+  }
+  .slick-arrow#prev3 {
+    left: 0;
+    bottom: -4rem;
+  }
+  .slick-arrow#next3 {
+    left: 4rem;
+    bottom: -4rem;
+  }
 }

@@ -9,13 +9,40 @@
 }
 
 @layer components {
+  .menu-item:first-child {
+    position: relative;
+  }
+
+  .menu-item:first-child::before {
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 100%;
+    background-color: rgb(251, 146, 60);
+    top: var(--value);
+    right: 0;
+    transition: ease-out 300ms;
+  }
+
+  .menu-item {
+    @apply h-[3.75rem] pr-4 transition-all flex items-center;
+  }
+
+  .menu-item.hoverable {
+    @apply cursor-pointer rounded-lg hover:bg-orange-400 hover:text-white hover:shadow-md;
+  }
+
+  .menu-item.selected {
+    @apply text-orange-400;
+  }
+
   a.link {
     position: relative;
   }
 
   a.link:hover {
     transition: ease-in-out 0.3s;
-    color: rgb(251 146 60);
+    color: rgb(251, 146, 60);
   }
 
   a.link:hover::before {
@@ -27,7 +54,7 @@
     position: absolute;
     width: 0;
     height: 2px;
-    background-color: rgb(251 146 60);
+    background-color: rgb(251, 146, 60);
     left: 0;
     bottom: -2px;
     transition: ease-in-out 0.3s;
@@ -39,8 +66,8 @@
 
   .menu-layout {
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
   }
 
   .icon-ml {
@@ -49,7 +76,25 @@
 
   .footer-layout {
     display: grid;
-    grid-template-columns: 2fr 3fr;
+    grid-template-columns: 1fr;
     grid-gap: 2rem;
+  }
+
+  @media screen and (min-width: 768px) {
+    .menu-layout {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      grid-gap: 2rem;
+    }
+
+    .menu-item {
+      @apply px-8 py-4 transition-all;
+    }
+
+    .footer-layout {
+      display: grid;
+      grid-template-columns: 2fr 3fr;
+      grid-gap: 2rem;
+    }
   }
 }

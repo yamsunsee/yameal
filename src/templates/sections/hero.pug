@@ -1,19 +1,19 @@
-.w-full.bg-orange-100.flex.flex-col.justify-center.items-center
-  .w-full.max-w-6xl.grid.grid-cols-2.items-center.mt-12
+.w-full.bg-orange-100.flex.flex-col.justify-center.items-center.px-4(class="sm:px-8 xl:px-0")
+  .w-full.max-w-6xl.grid.grid-cols-1.items-center.mt-12.gap-8(class="md:grid-cols-2 md:gap-0")
     div
       .font-extrabold.text-6xl.capitalize.max-w-lg Yummy food for busy people.
       p.mt-4 Eat the food you dream about at affordable prices.
       p No need to come to us just call us.
-      a.mt-8.flex.items-center.group.w-fit(href="")
+      a.mt-8.flex.items-center.group.w-fit(href="#menu")
         .h-14.flex.justify-center.items-center.bg-orange-400.text-white.px-8.font-semibold.rounded-tl-lg.rounded-bl-lg.capitalize.transition-all(class="group-hover:bg-white group-hover:text-orange-400 group-hover:shadow-md") Explore menu
         .h-14.px-4.bg-white.flex.justify-center.items-center.text-xl.rounded-tr-lg.rounded-br-lg.transition-all(class="group-hover:bg-orange-400 group-hover:text-white group-hover:shadow-md")
           ion-icon(name="chevron-forward")
-    .flex.justify-end
-      .hero.w-96
+    .flex.justify-center(class="md:justify-end")
+      .hero(class="w-[20.5rem] sm:max-w-sm lg:w-full")
         each food, index in [{name: "Banh mi", price: "15$"}, {name: "Com tam", price: "30$"}, {name: "Pho", price: "25$"}, {name: "Ca phe trung", price: "15$"}, {name: "Chuoi nep nuong", price: "5$"}, {name: "Banh trang tron", price: "5$"}, {name: "Goi cuon", price: "15$"}, {name: "Banh xeo", price: "20$"}]
           .bg-white.rounded-lg.overflow-hidden
             img.w-full.h-52.object-cover(src=`./src/assets/images/food${index}.png`, alt="food")
-            .p-8.flex.flex-col.justify-center.items-center
+            .p-8.flex.flex-col.justify-center.items-center(class="md:p-4 lg:p-8")
               .capitalize.font-bold.text-xl.text-center= food.name
               div Price: 
                 span.font-bold.text-xl= food.price
