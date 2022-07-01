@@ -1,7 +1,7 @@
 // Sliders
 $(document).ready(function () {
   $(".hero").slick({
-    infinite: true,
+    infinite: false,
     slidesToShow: 1,
     slidesToScroll: 1,
     dots: true,
@@ -28,6 +28,8 @@ $(document).ready(function () {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          arrows: false,
+          dots: true,
         },
       },
     ],
@@ -46,6 +48,15 @@ $(document).ready(function () {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: false,
+          dots: true,
         },
       },
     ],
@@ -76,4 +87,24 @@ menuItems.forEach((menuItem, index) => {
       currentSelectedItem = target
     }
   }
+})
+// Navigation
+const closeButton = document.querySelector(".close-button")
+const expandButton = document.querySelector(".expand-button")
+const navItems = document.querySelector(".nav-items")
+const navItemList = [...navItems.querySelectorAll(".link")]
+const navLinks = document.querySelector(".nav-links")
+
+expandButton.onclick = () => {
+  navItems.classList.remove("translate-x-full")
+  navLinks.classList.remove("translate-y-[10rem]")
+}
+
+closeButton.onclick = () => {
+  navItems.classList.add("translate-x-full")
+  navLinks.classList.add("translate-y-[10rem]")
+}
+
+navItemList.forEach((item) => {
+  item.onclick = () => closeButton.click()
 })
