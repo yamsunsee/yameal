@@ -3,8 +3,8 @@
     a.font-bold.text-3xl.text-orange-400(href="") Ya
       span.text-blue-900 meal
       span.text-orange-400 . 
-    .nav-items.fixed.inset-0.bg-gradient-to-l.from-black.font-semibold.capitalize.z-30.flex.flex-col.items-end.text-white.p-8.text-2xl.gap-4.transfrom.translate-x-full.transition-all(class="to-black/50 md:bg-none md:text-base md:p-0 md:relative md:flex  md:transform-none md:flex-row md:items-start md:text-black lg:gap-12")
-      .close-button.text-3xl(class="md:hidden")
+    .nav-items.fixed.inset-0.bg-gradient-to-l.from-black.font-semibold.capitalize.z-30.flex.flex-col.items-end.text-white.p-8.text-2xl.gap-4.transfrom.translate-x-full.transition-all(class="to-black/50 md:bg-none md:text-base md:p-0 md:relative md:flex md:transform-none md:flex-row md:items-start md:text-black lg:gap-12")
+      .close-button.text-3xl.cursor-pointer(class="hover:text-orange-400 md:hidden")
         ion-icon(name="close-outline") 
       each item in ["Home", "Categories", "Menu", "About us"]
         if (item === "Home")
@@ -17,5 +17,5 @@
       a.px-4.py-2.rounded-lg.bg-orange-400.text-white.text-2xl.uppercase.font-semibold.transition-all(href="" class="hover:bg-white hover:text-orange-400 hover:shadow-md md:p-2 md:text-sm lg:px-4 lg:py-2") Sign up
       a.px-4.py-2.rounded-lg.bg-blue-900.text-white.text-2xl.uppercase.font-semibold.transition-all(href="" class="hover:bg-white hover:text-blue-900 hover:shadow-md md:p-2 md:text-sm lg:px-4 lg:py-2") Sign in
     .flex.gap-4(class="md:hidden")
-      .expand-button.w-12.h-12.bg-orange-400.flex.items-center.rounded-lg.text-3xl.text-white.flex.justify-center.items-center(href="" class="hover:bg-white hover:text-orange-400 hover:shadow-md")
+      .expand-button.w-12.h-12.bg-orange-400.flex.items-center.rounded-lg.text-3xl.text-white.flex.justify-center.items-center.cursor-pointer(href="" class="hover:bg-white hover:text-orange-400 hover:shadow-md")
         ion-icon(name="menu-outline")  
